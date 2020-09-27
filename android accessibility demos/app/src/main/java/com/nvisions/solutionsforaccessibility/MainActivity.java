@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.nvisions.solutionsforaccessibility.LiveRegion.LiveRegionActivity;
+import com.nvisions.solutionsforaccessibility.NestedScroll.NestedScrollActivity;
 import com.nvisions.solutionsforaccessibility.carousel.CarouselActivity;
 import com.nvisions.solutionsforaccessibility.labelFor.LabelForActivity;
 import com.nvisions.solutionsforaccessibility.music.MusicActivity;
@@ -103,6 +104,14 @@ startActivity(intent);
             }
         });
 
+        Button nestedScroll = (Button)findViewById(R.id.nestedScroll);
+        nestedScroll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NestedScrollActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 

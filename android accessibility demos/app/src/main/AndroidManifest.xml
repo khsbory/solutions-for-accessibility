@@ -11,6 +11,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ratingBar.RatingBarBadActivity"></activity>
         <activity android:name=".ratingBar.RatingBarGoodActivity" />
+        <activity android:name=".NestedScroll.NestedScrollExampleActivity"
+            android:parentActivityName=".NestedScroll.NestedScrollActivity">
+        </activity>
+        <activity android:name=".NestedScroll.NestedScrollActivity"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".ratingBar.RatingBarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
