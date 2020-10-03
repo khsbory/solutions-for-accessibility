@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TabControl.TabControlActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".TabControl.TabGoodActivity"
+            android:parentActivityName=".TabControl.TabControlActivity"/>
+        <activity android:name=".TabControl.TabBadActivity"
+            android:parentActivityName=".TabControl.TabControlActivity"/>
         <activity android:name=".ratingBar.RatingBarBadActivity"></activity>
         <activity android:name=".ratingBar.RatingBarGoodActivity" />
         <activity android:name=".NestedScroll.NestedScrollExampleActivity"

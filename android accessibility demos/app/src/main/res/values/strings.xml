@@ -138,6 +138,14 @@
 <string name="nestedScrollDescription">NestedScrollView로 여러 콘텐츠를 구현하는 경우에는 기본적으로 톡백에서 한 손가락 쓸기를 이용하더라도 자동으로 화면 스크롤이 되지 않습니다.</string>
 <string name="a11ySample">접근성 예제</string>
 <string name="applyA11y">접근성 적용</string>
-
+<string name="score">점</string>
+    <string name="tabControl">탭컨트롤</string>
+<string name="tabControlExplain">안드로이드 네이티브 접근성에서는 탭 컨트롤이 없습니다. 따라서 각 탭 요소를 탭이라고 읽어주게 하려면 roleDescription 메소드를 사용해야 합니다.</string>
+    <string name="tabContent">본문 콘텐츠입니다.</string>
+    <string name="homeTab">홈</string>
+    <string name="gameTab">게임</string>
+    <string name="movieTab">영화</string>
+    <string name="bookTab">도서</string>
+    <string name="newsTab">도서</string>
 
 </resources>

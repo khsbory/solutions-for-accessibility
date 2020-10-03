@@ -74,4 +74,11 @@ android:text="@string/progressBar"/>
         android:id="@+id/nestedScroll"
         android:layout_gravity="center"
         android:text="@string/nestedScroll"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabControl"
+        android:layout_gravity="center"
+        android:text="@string/tabControl"/>
 </LinearLayout>

@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nvisions.solutionsforaccessibility.LiveRegion.LiveRegionActivity;
 import com.nvisions.solutionsforaccessibility.NestedScroll.NestedScrollActivity;
+import com.nvisions.solutionsforaccessibility.TabControl.TabControlActivity;
 import com.nvisions.solutionsforaccessibility.carousel.CarouselActivity;
 import com.nvisions.solutionsforaccessibility.labelFor.LabelForActivity;
 import com.nvisions.solutionsforaccessibility.music.MusicActivity;
@@ -112,6 +113,16 @@ startActivity(intent);
                 startActivity(intent);
             }
         });
+
+        Button tabControl = (Button)findViewById(R.id.tabControl);
+        tabControl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TabControlActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
 
