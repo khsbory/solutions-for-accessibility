@@ -146,6 +146,20 @@
     <string name="gameTab">게임</string>
     <string name="movieTab">영화</string>
     <string name="bookTab">도서</string>
-    <string name="newsTab">도서</string>
+    <string name="newsTab">뉴스스탠드</string>
+<string name="collapseExpand">확장/축소</string>
+<string name="collapseExpandDescription">특정 객체가 확장/축소 기능을 수행하는 경우에는 현재 상태가 확장된 상태인지 축소된 상태인지를 스크린 리더 사용자에게 알려 주어야 합니다.</string>
+    <string name="accessibility_permission_setting">접근성 권한 설정</string>
+    <string name="accessibility_description">접근성 권한을 필요로 합니다.</string>
+    <string name="confirm">확인</string>
+    <string name="accessibleExample">접근성이 적용된 예시</string>
+    <string name="nonAccessibleExample">접근성이 적용되지 않은 경우</string>
+
+    <string name="fruit">과일</string>
+    <string name="vegitable">채소</string>
+    <string name="apple">사과</string>
+    <string name="orange">오렌지</string>
+    <string name="bean_sprouts">콩나물</string>
+    <string name="spinach">시금치</string>
 
 </resources>

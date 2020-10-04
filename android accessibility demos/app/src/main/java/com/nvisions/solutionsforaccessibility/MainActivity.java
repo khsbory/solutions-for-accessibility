@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.nvisions.solutionsforaccessibility.CollapseExpand.CollapseExpandActivity;
 import com.nvisions.solutionsforaccessibility.LiveRegion.LiveRegionActivity;
 import com.nvisions.solutionsforaccessibility.NestedScroll.NestedScrollActivity;
 import com.nvisions.solutionsforaccessibility.TabControl.TabControlActivity;
@@ -119,6 +120,15 @@ startActivity(intent);
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TabControlActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button collapseExpand = (Button)findViewById(R.id.collapseExpand);
+        collapseExpand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CollapseExpandActivity.class);
                 startActivity(intent);
             }
         });

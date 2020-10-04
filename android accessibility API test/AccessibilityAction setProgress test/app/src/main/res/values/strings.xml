@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music player</string>
+    <string name="replay">처음부터 재생</string>
+    <string name="adjustTime">시간 조절</string>
+<string name="mPass">경과시간:\u0020</string>
+<string name="second">초</string>
+<string name="pause">일시정지</string>
+<string name="play">재생</string>
+
+
+</resources>
