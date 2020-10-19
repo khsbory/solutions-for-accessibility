@@ -11,6 +11,8 @@ import com.nvisions.solutionsforaccessibility.CollapseExpand.CollapseExpandActiv
 import com.nvisions.solutionsforaccessibility.LiveRegion.LiveRegionActivity;
 import com.nvisions.solutionsforaccessibility.NestedScroll.NestedScrollActivity;
 import com.nvisions.solutionsforaccessibility.TabControl.TabControlActivity;
+import com.nvisions.solutionsforaccessibility.WebView.WebViewActivity;
+import com.nvisions.solutionsforaccessibility.WebView.WebViewWithAccessibilityActivity;
 import com.nvisions.solutionsforaccessibility.carousel.CarouselActivity;
 import com.nvisions.solutionsforaccessibility.labelFor.LabelForActivity;
 import com.nvisions.solutionsforaccessibility.music.MusicActivity;
@@ -129,6 +131,15 @@ startActivity(intent);
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CollapseExpandActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button webView = (Button)findViewById(R.id.webView);
+        webView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), WebViewActivity.class);
                 startActivity(intent);
             }
         });

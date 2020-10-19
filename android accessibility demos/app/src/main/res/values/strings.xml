@@ -134,21 +134,21 @@
     <string name="ratingBar_good">RatingBar 사용, 접근성 적용한 경우</string>
     <string name="ratingBar_bad">RatingBar 사용, 접근성 적용하지 않은 경우</string>
 
-<string name="nestedScroll">화면 스크롤 접근성 데모</string>
-<string name="nestedScrollDescription">NestedScrollView로 여러 콘텐츠를 구현하는 경우에는 기본적으로 톡백에서 한 손가락 쓸기를 이용하더라도 자동으로 화면 스크롤이 되지 않습니다.</string>
-<string name="a11ySample">접근성 예제</string>
-<string name="applyA11y">접근성 적용</string>
-<string name="score">점</string>
+    <string name="nestedScroll">화면 스크롤 접근성 데모</string>
+    <string name="nestedScrollDescription">NestedScrollView로 여러 콘텐츠를 구현하는 경우에는 기본적으로 톡백에서 한 손가락 쓸기를 이용하더라도 자동으로 화면 스크롤이 되지 않습니다.</string>
+    <string name="a11ySample">접근성 예제</string>
+    <string name="applyA11y">접근성 적용</string>
+    <string name="score">점</string>
     <string name="tabControl">탭컨트롤</string>
-<string name="tabControlExplain">안드로이드 네이티브 접근성에서는 탭 컨트롤이 없습니다. 따라서 각 탭 요소를 탭이라고 읽어주게 하려면 roleDescription 메소드를 사용해야 합니다.</string>
+    <string name="tabControlExplain">안드로이드 네이티브 접근성에서는 탭 컨트롤이 없습니다. 따라서 각 탭 요소를 탭이라고 읽어주게 하려면 roleDescription 메소드를 사용해야 합니다.</string>
     <string name="tabContent">본문 콘텐츠입니다.</string>
     <string name="homeTab">홈</string>
     <string name="gameTab">게임</string>
     <string name="movieTab">영화</string>
     <string name="bookTab">도서</string>
     <string name="newsTab">뉴스스탠드</string>
-<string name="collapseExpand">확장/축소</string>
-<string name="collapseExpandDescription">특정 객체가 확장/축소 기능을 수행하는 경우에는 현재 상태가 확장된 상태인지 축소된 상태인지를 스크린 리더 사용자에게 알려 주어야 합니다.</string>
+    <string name="collapseExpand">확장/축소</string>
+    <string name="collapseExpandDescription">특정 객체가 확장/축소 기능을 수행하는 경우에는 현재 상태가 확장된 상태인지 축소된 상태인지를 스크린 리더 사용자에게 알려 주어야 합니다.</string>
     <string name="accessibility_permission_setting">접근성 권한 설정</string>
     <string name="accessibility_description">접근성 권한을 필요로 합니다.</string>
     <string name="confirm">확인</string>
@@ -161,5 +161,8 @@
     <string name="orange">오렌지</string>
     <string name="bean_sprouts">콩나물</string>
     <string name="spinach">시금치</string>
+    <string name="webView">웹뷰</string>
+    <string name="webview_with_accessibility">접근성이 구현된 웹뷰</string>
+    <string name="webview_without_accessibility">접근성이 구현되지 않은 웹뷰</string>
 
 </resources>
