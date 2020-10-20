@@ -49,7 +49,7 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
                 // do your stuff here
                 progressBar.setVisibility(View.INVISIBLE);
 
-                //웹페이지를 읽지 않는 경우가 있어 1초 딜레이 줌 
+                //웹페이지를 읽지 않는 경우가 있어 1초 딜레이 줌
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
