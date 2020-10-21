@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize the handler
         mHandler = new Handler();
+        
 
         // Click listener for playing button
         mButtonPlay.setOnClickListener(new View.OnClickListener() {
