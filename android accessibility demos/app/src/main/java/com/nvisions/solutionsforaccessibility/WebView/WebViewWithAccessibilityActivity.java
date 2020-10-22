@@ -1,11 +1,19 @@
 package com.nvisions.solutionsforaccessibility.WebView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.AccessibilityDelegateCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.core.view.accessibility.AccessibilityViewCommand;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityNodeInfo;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -69,9 +77,48 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
             }
         });
 
+        //아래 방법은 작동하지 않음
+//        browser.setAccessibilityDelegate(new View.AccessibilityDelegate() {
+//            @Override
+//            public void onInitializeAccessibilityNodeInfo(
+//                    View v, AccessibilityNodeInfo info) {
+//                super.onInitializeAccessibilityNodeInfo(v, info);
+//
+//                Log.d("plusapps",info.toString());
+//
+//                AccessibilityNodeInfo.AccessibilityAction customClick = new AccessibilityNodeInfo.AccessibilityAction(
+//                        AccessibilityNodeInfo.ACTION_CLICK, "");
+//                info.addAction(customClick);
+//            }
+//        });
 
+        //아래 방법도 작동하지 않음
+//        ViewCompat.replaceAccessibilityAction(browser,AccessibilityNodeInfoCompat.AccessibilityActionCompat.ACTION_CLICK, "사과", new AccessibilityViewCommand() {
+//            @Override
+//            public boolean perform(@NonNull View view, @Nullable CommandArguments args) {
+//                return true;
+//            }
+//        });
+
+        //아래 방법도 작동하지 않음
+//        ViewCompat.setAccessibilityDelegate(browser, new AccessibilityDelegateCompat() {
+//            @Override
+//            public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfoCompat info) {
+//                super.onInitializeAccessibilityNodeInfo(host, info);
+//               // info.addAction(AccessibilityNodeInfoCompat.ACTION_FOCUS);
+//                // A custom action description. For example, you could use "pause"
+//                // to have TalkBack speak "double-tap to pause."
+//                CharSequence description = "활성화하려면 두번 탭하세요";
+//                AccessibilityNodeInfoCompat.AccessibilityActionCompat customClick = new AccessibilityNodeInfoCompat.AccessibilityActionCompat(
+//                        AccessibilityNodeInfoCompat.ACTION_FOCUS, description);
+//                info.addAction(customClick);
+//            }
+//        });
+
+        
         browser.loadUrl("https://a11y-nvisions.github.io/Solutions/WEB/example.radioButton/index.html");
     }
+
 
     @Override
     public void onBackPressed() {
