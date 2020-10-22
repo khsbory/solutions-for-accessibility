@@ -85,12 +85,12 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
 //                super.onInitializeAccessibilityNodeInfo(v, info);
 //
 //                Log.d("plusapps",info.toString());
-//
+
 //                AccessibilityNodeInfo.AccessibilityAction customClick = new AccessibilityNodeInfo.AccessibilityAction(
 //                        AccessibilityNodeInfo.ACTION_CLICK, "");
 //                info.addAction(customClick);
-//            }
-//        });
+//}
+//});
 
         //아래 방법도 작동하지 않음
 //        ViewCompat.replaceAccessibilityAction(browser,AccessibilityNodeInfoCompat.AccessibilityActionCompat.ACTION_CLICK, "사과", new AccessibilityViewCommand() {
@@ -115,7 +115,7 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
 //            }
 //        });
 
-        
+
         browser.loadUrl("https://a11y-nvisions.github.io/Solutions/WEB/example.radioButton/index.html");
     }
 
