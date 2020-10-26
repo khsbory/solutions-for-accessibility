@@ -1,7 +1,5 @@
 package com.nvisions.solutionsforaccessibility.WebView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -11,7 +9,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.nvisions.solutionsforaccessibility.R;
 
@@ -23,10 +22,9 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview_with_accessibility);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         browser=findViewById(R.id.browser);
         progressBar = findViewById(R.id.progressBar);
-
         WebSettings websettings = browser.getSettings();
         websettings.setDomStorageEnabled(true);  // Open DOM storage function
         websettings.setAppCacheMaxSize(1024*1024*8);
@@ -36,7 +34,6 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
         websettings.setAppCacheEnabled(true);    //Turn on the H5(APPCache) caching function
         websettings.setJavaScriptEnabled(true);
 
-        //alert가 작동하려면 아래 WebChromeClient 지정해야 함
         browser.setWebViewClient(new WebViewClient() {
             public void onPageStarted(WebView view, String url,
                                       android.graphics.Bitmap favicon) {
@@ -49,7 +46,6 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
                 // do your stuff here
                 progressBar.setVisibility(View.INVISIBLE);
 
-                //웹페이지를 읽지 않는 경우가 있어 1초 딜레이 줌
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -60,6 +56,8 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
 
             }
         });
+
+        
         browser.setWebChromeClient(new WebChromeClient() {
             @Override
             public void onProgressChanged(WebView view, int newProgress) {

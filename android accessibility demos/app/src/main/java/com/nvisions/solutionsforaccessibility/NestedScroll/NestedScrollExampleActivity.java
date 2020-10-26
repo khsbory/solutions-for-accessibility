@@ -101,13 +101,11 @@ public class NestedScrollExampleActivity extends AppCompatActivity {
         checkBox.setBackgroundResource(R.drawable.checked);
     }
 
-    //하단 board 확장
     private void expandBottomBoard() {
         final NestedScrollView bottomBoard = findViewById(R.id.bottom_board);
         bottomBoard.post(new Runnable() {
             @Override
             public void run() {
-                //아래 코드를 사용해야 작동함. scrollBy나 layoutParams의 높이를 지정하는 것은 효과없음
                 final BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomBoard);
                 if (behavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
                     behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
@@ -116,13 +114,12 @@ public class NestedScrollExampleActivity extends AppCompatActivity {
         });
     }
 
-    //하단 board 확장
+
     private void collapseBottomBoard() {
         final NestedScrollView bottomBoard = findViewById(R.id.bottom_board);
         bottomBoard.post(new Runnable() {
             @Override
             public void run() {
-                //아래 코드를 사용해야 작동함. scrollBy나 layoutParams의 높이를 지정하는 것은 효과없음
                 final BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomBoard);
                 if (behavior.getState() == BottomSheetBehavior.STATE_EXPANDED) {
                     behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
@@ -149,7 +146,6 @@ public class NestedScrollExampleActivity extends AppCompatActivity {
         @Override
         public void onInitializeAccessibilityNodeInfo(View host, AccessibilityNodeInfo info) {
             super.onInitializeAccessibilityNodeInfo(host, info);
-            // Avoid that the button description is also spoken
             info.setScrollable(true);
         }
     };

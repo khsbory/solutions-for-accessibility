@@ -15,7 +15,9 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".WebView.WebViewActivity"></activity>
         <activity android:name=".WebView.WebViewWithoutAccessibilityActivity" />
-        <activity android:name=".WebView.WebViewWithAccessibilityActivity" />
+        <activity android:name=".WebView.WebViewWithAccessibilityActivity"
+            android:parentActivityName=".WebView.WebViewActivity"
+            />
         <activity
             android:name=".CollapseExpand.CollapseExpandActivity"
             android:parentActivityName=".MainActivity" />
