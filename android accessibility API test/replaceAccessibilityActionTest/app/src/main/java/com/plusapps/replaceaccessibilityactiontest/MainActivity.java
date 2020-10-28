@@ -19,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initButton();
+        initButton1();
+        initButton2();
     }
 
-    private void initButton() {
-        Button button = findViewById(R.id.button);
+    private void initButton1() {
+        Button button = findViewById(R.id.button1);
         button.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -47,5 +48,27 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+    }
+
+    private void initButton2() {
+        Button button = findViewById(R.id.button2);
+        button.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                return false;
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("plusapps", "버튼 클릭!");
+            }
+        });
+
+
+        //라벨과 command를 null로 하는 경우
+        ViewCompat.replaceAccessibilityAction(button, AccessibilityNodeInfoCompat.AccessibilityActionCompat.ACTION_CLICK, "", null);
     }
 }
