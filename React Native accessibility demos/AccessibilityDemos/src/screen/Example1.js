@@ -34,19 +34,6 @@ export class Example1 extends Component {
           fontSize: 20,
           color: 'black'
         }} accessibilityRole="header">스크린 리더 동작 테스트</Text>
-
-         <TouchableOpacity
-          accessible={true}
-          accessibilityLabel="뒤로"
-          onAccessibilityEscape={(event) => {
-            return true
-          }}
-         >
-          <View >
-            <Text >뒤로</Text>
-          </View>
-        </TouchableOpacity>
-
         <TouchableOpacity
           accessible={true}
           accessibilityLabel="커스텀버튼"

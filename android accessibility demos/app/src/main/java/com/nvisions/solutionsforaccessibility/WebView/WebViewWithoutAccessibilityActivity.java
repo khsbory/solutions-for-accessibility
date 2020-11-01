@@ -16,7 +16,8 @@ public class WebViewWithoutAccessibilityActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview_without_accessibility);
-
+        setTitle(R.string.badExample);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         browser=findViewById(R.id.browser);
 
         WebSettings websettings = browser.getSettings();

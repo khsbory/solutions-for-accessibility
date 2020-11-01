@@ -36,6 +36,8 @@ public class TabGoodActivity extends AppCompatActivity {
         TabLayout.Tab bookTab = mTabLayout.newTab().setCustomView(createTabView(getString(R.string.bookTab)));
         TabLayout.Tab newsTab = mTabLayout.newTab().setCustomView(createTabView(getString(R.string.newsTab)));
         mTabLayout.addTab(homeTab);
+
+
         mTabLayout.addTab(gameTab);
 
         mTabLayout.addTab(movieTab);
