@@ -14,7 +14,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var demoTitles:[String] =
-        ["가로 스크롤 접근성 데모"]
+        ["가로 스크롤 접근성 데모", "웹뷰"]
     @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
@@ -49,6 +49,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (indexPath.row == 0) {
              showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo", viewControllerStoryboardId: "verticalScrollDemo")
+        } else if (indexPath.row == 1) {
+            showScreenOnOtherStoryboard(storyboardName: "WebViewDemo", viewControllerStoryboardId: "webViewDemo")
         }
     }
     
