@@ -14,9 +14,17 @@ class WebViewDemoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     // MARK: - Properties
     // MARK: Custom
     
-   
+    
     @IBOutlet weak var webView: WKWebView!
-   
+  
+    @IBOutlet weak var progressView: UIProgressView!
+    /// The observation object for the progress of the web view (we only receive notifications until it is deallocated).
+    private var estimatedProgressObserver: NSKeyValueObservation?
+    
+    @IBOutlet weak var previousButton: UIButton!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
     
     
     // MARK: - Methods
@@ -45,13 +53,16 @@ class WebViewDemoViewController: UIViewController, WKUIDelegate, WKNavigationDel
         contentController.addUserScript(userScript)
         
         // WKWebView를 미리 지정해둔 Container View의 Bounds에 맞춰 만들고 Configuration을 지정한다.
-      
+        
         webView.uiDelegate = self // uiDelegate는 웹 페이지 대신 Native User Interface 요소를 나타내는 메서드를 제공한다.
         webView.navigationDelegate = self // navigationDelegate는 WKWebView가 naviation을 하면서 발생하는 이벤트(탐색 요청 수락, 로드, 완료 등)들을 관리할 수 있게 한다.
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupProgressView()
+        setupEstimatedProgressObserver()
         
         let url = URL(string: "https://a11y-nvisions.github.io/Solutions/WEB/example.radioButton/index.html" )
         let myRequest = URLRequest(url: url!)
@@ -60,6 +71,16 @@ class WebViewDemoViewController: UIViewController, WKUIDelegate, WKNavigationDel
         }
         
         UIAccessibility.post(notification: .screenChanged, argument: nil)
+    }
+    
+    private func setupProgressView() {
+        progressView.isHidden = true
+    }
+    
+    private func setupEstimatedProgressObserver() {
+        estimatedProgressObserver = webView.observe(\.estimatedProgress, options: [.new]) { [weak self] webView, _ in
+            self?.progressView.progress = Float(webView.estimatedProgress)
+        }
     }
     
     // MARK: Memory Management
@@ -84,6 +105,7 @@ class WebViewDemoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     
     
     @IBAction func onPreviousButtonClicked(_ sender: Any) {
+        print("onPreviousButtonClicked")
         if webView.canGoBack {
             webView.goBack()
         }
@@ -91,12 +113,41 @@ class WebViewDemoViewController: UIViewController, WKUIDelegate, WKNavigationDel
     }
     
     @IBAction func onNextButtonClicked(_ sender: Any) {
+        print("onNextButtonClicked")
         if webView.canGoForward {
             webView.goForward()
         }
         
     }
     
-  
+    func webView(_: WKWebView, didStartProvisionalNavigation _: WKNavigation!) {
+            if progressView.isHidden {
+                // Make sure our animation is visible.
+                progressView.isHidden = false
+            }
+
+            UIView.animate(withDuration: 0.33,
+                           animations: {
+                               self.progressView.alpha = 1.0
+            })
+        }
+
+        func webView(_: WKWebView, didFinish _: WKNavigation!) {
+            UIView.animate(withDuration: 0.33,
+                           animations: {
+                               self.progressView.alpha = 0.0
+                           },
+                           completion: { isFinished in
+                               // Update `isHidden` flag accordingly:
+                               //  - set to `true` in case animation was completly finished.
+                               //  - set to `false` in case animation was interrupted, e.g. due to starting of another animation.
+                               self.progressView.isHidden = isFinished
+            })
+            
+            
+            previousButton.isEnabled = webView.canGoBack
+            nextButton.isEnabled = webView.canGoForward
+            
+        }
     
 }

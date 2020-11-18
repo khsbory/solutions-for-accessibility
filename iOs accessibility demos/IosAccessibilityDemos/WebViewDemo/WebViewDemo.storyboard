@@ -27,8 +27,11 @@
                                             <action selector="onBackButtonClicked:" destination="KMu-9N-OkE" eventType="touchUpInside" id="FxV-HZ-kvA"/>
                                         </connections>
                                     </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KwM-Od-Bsi">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="4"/>
+                                    </progressView>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhJ-IF-1B8">
-                                        <rect key="frame" x="0.0" y="80" width="414" height="658"/>
+                                        <rect key="frame" x="0.0" y="84" width="414" height="654"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <wkWebViewConfiguration key="configuration">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -54,13 +57,16 @@
                                 <constraints>
                                     <constraint firstItem="l0d-kH-Ohf" firstAttribute="bottom" secondItem="A7h-az-Upj" secondAttribute="bottom" constant="-25" id="5ZG-iy-haQ"/>
                                     <constraint firstItem="KhJ-IF-1B8" firstAttribute="bottom" secondItem="YqY-6z-4zO" secondAttribute="top" constant="-25" id="5xx-Ie-uJx"/>
+                                    <constraint firstItem="KwM-Od-Bsi" firstAttribute="leading" secondItem="A7h-az-Upj" secondAttribute="leading" id="HSV-ig-URj"/>
                                     <constraint firstItem="360-uL-7Rp" firstAttribute="leading" secondItem="A7h-az-Upj" secondAttribute="leading" constant="30" id="L4G-IJ-tY3"/>
                                     <constraint firstItem="YqY-6z-4zO" firstAttribute="leading" secondItem="A7h-az-Upj" secondAttribute="leading" constant="30" id="XyP-Df-I49"/>
                                     <constraint firstItem="360-uL-7Rp" firstAttribute="top" secondItem="A7h-az-Upj" secondAttribute="top" constant="25" id="asp-62-RDs"/>
                                     <constraint firstItem="KhJ-IF-1B8" firstAttribute="trailing" secondItem="A7h-az-Upj" secondAttribute="trailing" id="bNp-VR-toi"/>
-                                    <constraint firstItem="KhJ-IF-1B8" firstAttribute="top" secondItem="360-uL-7Rp" secondAttribute="bottom" constant="25" id="i4n-7V-kRX"/>
+                                    <constraint firstItem="KhJ-IF-1B8" firstAttribute="top" secondItem="KwM-Od-Bsi" secondAttribute="bottom" id="i4n-7V-kRX"/>
                                     <constraint firstItem="l0d-kH-Ohf" firstAttribute="trailing" secondItem="A7h-az-Upj" secondAttribute="trailing" constant="-30" id="mkM-ZJ-8WK"/>
+                                    <constraint firstItem="KwM-Od-Bsi" firstAttribute="trailing" secondItem="A7h-az-Upj" secondAttribute="trailing" id="mvu-Sb-f1s"/>
                                     <constraint firstItem="KhJ-IF-1B8" firstAttribute="leading" secondItem="A7h-az-Upj" secondAttribute="leading" id="nMz-y7-j1P"/>
+                                    <constraint firstItem="KwM-Od-Bsi" firstAttribute="top" secondItem="360-uL-7Rp" secondAttribute="bottom" constant="25" id="s7n-wO-cGp"/>
                                     <constraint firstItem="YqY-6z-4zO" firstAttribute="bottom" secondItem="A7h-az-Upj" secondAttribute="bottom" constant="-25" id="zaj-Bz-9yj"/>
                                 </constraints>
                             </view>
@@ -75,6 +81,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="l0d-kH-Ohf" id="02b-1d-eBa"/>
+                        <outlet property="previousButton" destination="YqY-6z-4zO" id="j9g-H4-scX"/>
+                        <outlet property="progressView" destination="KwM-Od-Bsi" id="lUx-Tg-gqy"/>
                         <outlet property="webView" destination="KhJ-IF-1B8" id="25C-MX-XSQ"/>
                     </connections>
                 </viewController>
