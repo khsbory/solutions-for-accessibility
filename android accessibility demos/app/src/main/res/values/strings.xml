@@ -164,6 +164,9 @@
     <string name="webView">웹뷰</string>
     <string name="webview_with_accessibility">접근성이 구현된 웹뷰</string>
     <string name="webview_without_accessibility">접근성이 구현되지 않은 웹뷰</string>
-<string name="webViewExplain">앱뷰 내부에 웹뷰 구현시에는 반드시 페이지가 로딩되었을 때 웹뷰 쪽으로 초점을 보내 주어야 하며 페이지가 로딩중이라는 것이 화면에 표시되는 경우 스크린 리더 사용자도 이를 확인할 수 있도록 구현해 주어야 합니다.</string>
+    <string name="webViewExplain">앱뷰 내부에 웹뷰 구현시에는 반드시 페이지가 로딩되었을 때 웹뷰 쪽으로 초점을 보내 주어야 하며 페이지가 로딩중이라는 것이 화면에 표시되는 경우 스크린 리더 사용자도 이를 확인할 수 있도록 구현해 주어야 합니다.</string>
+    <string name="korailTalk">코레일톡</string>
+    <string name="without_accessibility">접근성이 적용되지 않은 경우</string>
+    <string name="with_accessibility">접근성이 적용된 경우</string>
 
 </resources>

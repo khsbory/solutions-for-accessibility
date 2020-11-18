@@ -14,6 +14,7 @@ import com.nvisions.solutionsforaccessibility.TabControl.TabControlActivity;
 import com.nvisions.solutionsforaccessibility.WebView.WebViewActivity;
 import com.nvisions.solutionsforaccessibility.WebView.WebViewWithAccessibilityActivity;
 import com.nvisions.solutionsforaccessibility.carousel.CarouselActivity;
+import com.nvisions.solutionsforaccessibility.korailTalk.KorailTalkActivity;
 import com.nvisions.solutionsforaccessibility.labelFor.LabelForActivity;
 import com.nvisions.solutionsforaccessibility.music.MusicActivity;
 import com.nvisions.solutionsforaccessibility.overlay.FocusActivity;
@@ -144,6 +145,14 @@ startActivity(intent);
             }
         });
 
+        Button korailTalk = (Button)findViewById(R.id.korailTalk);
+        korailTalk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), KorailTalkActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 

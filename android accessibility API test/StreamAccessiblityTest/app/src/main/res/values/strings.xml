@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StreamAccessibilityTest</string>
+    <string name="accessibility_service_description">accessibility service to test steam accessiblity</string>
+    <string name="accessibility_service_label">my accessibility service</string>
+</resources>

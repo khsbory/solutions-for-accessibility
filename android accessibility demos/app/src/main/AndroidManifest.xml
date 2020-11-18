@@ -13,10 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".WebView.WebViewActivity" android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".WebView.WebViewWithoutAccessibilityActivity" android:parentActivityName=".WebView.WebViewActivity" />
-        <activity android:name=".WebView.WebViewWithAccessibilityActivity"
-            android:parentActivityName=".WebView.WebViewActivity"/>
+        <activity android:name=".korailTalk.KorailTalkWithoutAccessibilityActivity" />
+        <activity android:name=".korailTalk.KorailTalkWithAccessibilityActivity"  />
+        <activity android:name=".korailTalk.KorailTalkActivity" />
+        <activity
+            android:name=".WebView.WebViewActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WebView.WebViewWithoutAccessibilityActivity"
+            android:parentActivityName=".WebView.WebViewActivity" />
+        <activity
+            android:name=".WebView.WebViewWithAccessibilityActivity"
+            android:parentActivityName=".WebView.WebViewActivity" />
         <activity
             android:name=".CollapseExpand.CollapseExpandActivity"
             android:parentActivityName=".MainActivity" />

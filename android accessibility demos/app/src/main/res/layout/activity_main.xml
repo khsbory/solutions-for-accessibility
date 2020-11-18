@@ -97,5 +97,11 @@ android:text="@string/progressBar"/>
         android:id="@+id/webView"
         android:layout_gravity="center"
         android:text="@string/webView"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/korailTalk"
+        android:layout_gravity="center"
+        android:text="@string/korailTalk"/>
 </LinearLayout>
 </ScrollView>
