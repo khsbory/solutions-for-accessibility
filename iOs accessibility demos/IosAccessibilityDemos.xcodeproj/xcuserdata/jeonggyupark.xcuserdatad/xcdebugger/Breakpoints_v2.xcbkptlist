@@ -14,10 +14,10 @@
             filePath = "IosAccessibilityDemos/WebViewDemo/WebViewDemoViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "View Life Cycle"
-            landmarkType = "19">
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "launchWebViewDemoWithAccessibility(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "CAF63962-141F-4A30-B331-76B286DE8DD6 - b05b1fef87b5825"
