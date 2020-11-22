@@ -103,5 +103,12 @@ android:text="@string/progressBar"/>
         android:id="@+id/korailTalk"
         android:layout_gravity="center"
         android:text="@string/startEnd"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voiceSearch"
+        android:layout_gravity="center"
+        android:text="@string/voiceSearch"/>
 </LinearLayout>
 </ScrollView>

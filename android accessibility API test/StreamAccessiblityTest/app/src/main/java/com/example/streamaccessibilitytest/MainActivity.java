@@ -29,18 +29,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // 접근성 권한이 있는지 없는지 확인하는 부분
-    // 있으면 true, 없으면 false
     public boolean isAccessibilityServiceEnabled() {
         AccessibilityManager accessibilityManager = (AccessibilityManager) getSystemService(Context.ACCESSIBILITY_SERVICE);
-
-        // getEnabledAccessibilityServiceList는 현재 접근성 권한을 가진 리스트를 가져오게 된다
         List<AccessibilityServiceInfo> list = accessibilityManager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.DEFAULT);
-
         for (int i = 0; i < list.size(); i++) {
             AccessibilityServiceInfo info = list.get(i);
 
-            // 접근성 권한을 가진 앱의 패키지 네임과 패키지 네임이 같으면 현재앱이 접근성 권한을 가지고 있다고 판단함
             if (info.getResolveInfo().serviceInfo.packageName.equals(getApplication().getPackageName())) {
                 return true;
             }
@@ -48,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    // 접근성 설정화면으로 넘겨주는 부분
     public void setAccessibilityServicePermissions() {
         AlertDialog.Builder gsDialog = new AlertDialog.Builder(this);
         gsDialog.setTitle("일림");

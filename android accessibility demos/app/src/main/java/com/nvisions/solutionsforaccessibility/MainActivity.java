@@ -11,6 +11,7 @@ import com.nvisions.solutionsforaccessibility.CollapseExpand.CollapseExpandActiv
 import com.nvisions.solutionsforaccessibility.LiveRegion.LiveRegionActivity;
 import com.nvisions.solutionsforaccessibility.NestedScroll.NestedScrollActivity;
 import com.nvisions.solutionsforaccessibility.TabControl.TabControlActivity;
+import com.nvisions.solutionsforaccessibility.VoiceSearch.VoiceSearchActivity;
 import com.nvisions.solutionsforaccessibility.WebView.WebViewActivity;
 import com.nvisions.solutionsforaccessibility.WebView.WebViewWithAccessibilityActivity;
 import com.nvisions.solutionsforaccessibility.carousel.CarouselActivity;
@@ -153,6 +154,16 @@ startActivity(intent);
                 startActivity(intent);
             }
         });
+
+        Button voiceSearch = (Button) findViewById(R.id.voiceSearch);
+        voiceSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), VoiceSearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
 
