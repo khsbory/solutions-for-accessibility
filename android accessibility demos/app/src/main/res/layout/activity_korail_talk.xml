@@ -5,12 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".korailTalk.KorailTalkActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startEndExplain"
+        android:id="@+id/startEndExplain"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/withAccessibiilty"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/withoutAccessibiilty"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:text="@string/without_accessibility"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/startEndExplain"
         app:layout_constraintBottom_toTopOf="@id/withAccessibiilty"
         android:onClick="launchKarailTalkWithoutAccessibilityActivity"
         />
