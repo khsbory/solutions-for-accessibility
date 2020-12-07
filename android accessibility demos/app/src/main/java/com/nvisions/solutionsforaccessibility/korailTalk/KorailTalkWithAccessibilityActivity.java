@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +28,8 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
     private final int START_STATION = 0;
     private final int DESTINATION_STATION = 1;
 
+    private String startStationName = "서울";
+    private String destinationStationName = "대전";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +47,60 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
     }
 
     private void showBoard() {
+        TextView seoulStationView = findViewById(R.id.seoul);
+        seoulStationView.setSelected(false);
+        TextView busanStationView = findViewById(R.id.busan);
+        busanStationView.setSelected(false);
+        TextView dongdaeguStationView = findViewById(R.id.dongdaegu);
+        dongdaeguStationView.setSelected(false);
+        TextView daejeonStationView = findViewById(R.id.daejeon);
+        daejeonStationView.setSelected(false);
+
+        seoulStationView.setBackgroundColor(Color.TRANSPARENT);
+        busanStationView.setBackgroundColor(Color.TRANSPARENT);
+        dongdaeguStationView.setBackgroundColor(Color.TRANSPARENT);
+        daejeonStationView.setBackgroundColor(Color.TRANSPARENT);
+
+        if (stationType == START_STATION) {
+            switch (startStationName) {
+                case "서울":
+                    seoulStationView.setSelected(true);
+                    seoulStationView.setBackgroundColor(Color.BLUE);
+                    break;
+                case "부산":
+                    busanStationView.setSelected(true);
+                    busanStationView.setBackgroundColor(Color.BLUE);
+                    break;
+                case "동대구":
+                    dongdaeguStationView.setSelected(true);
+                    dongdaeguStationView.setBackgroundColor(Color.BLUE);
+                    break;
+                case "대전":
+                    daejeonStationView.setSelected(true);
+                    daejeonStationView.setBackgroundColor(Color.BLUE);
+                    break;
+            }
+        } else {
+            switch (destinationStationName) {
+                case "서울":
+                    seoulStationView.setSelected(true);
+                    seoulStationView.setBackgroundColor(Color.BLUE);
+                    break;
+                case "부산":
+                    busanStationView.setSelected(true);
+                    busanStationView.setBackgroundColor(Color.BLUE);
+                    break;
+                case "동대구":
+                    dongdaeguStationView.setSelected(true);
+                    dongdaeguStationView.setBackgroundColor(Color.BLUE);
+                    break;
+                case "대전":
+                    daejeonStationView.setSelected(true);
+                    daejeonStationView.setBackgroundColor(Color.BLUE);
+                    break;
+            }
+        }
+
         ConstraintLayout board = findViewById(R.id.board);
         board.setVisibility(View.VISIBLE);
 
@@ -71,8 +128,9 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
     }
 
     public void setStartStation(View view) {
-        showBoard();
+
         stationType = START_STATION;
+        showBoard();
         TextView startStationView = findViewById(R.id.startStation);
         TextView destinationStationView = findViewById(R.id.destinationStation);
         startStationView.setSelected(true);
@@ -80,8 +138,9 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
             }
 
     public void setDestinationStation(View view) {
-        showBoard();
+
         stationType = DESTINATION_STATION;
+        showBoard();
         TextView destinationStationView = findViewById(R.id.destinationStation);
         TextView startStationView = findViewById(R.id.startStation);
         destinationStationView.setSelected(true);
@@ -108,9 +167,11 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
         if (stationType == START_STATION) {
             TextView startStationView = findViewById(R.id.startStation);
             startStationView.setText("부산");
+            startStationName = "부산";
         } else {
             TextView destinationStationView = findViewById(R.id.destinationStation);
             destinationStationView.setText("부산");
+            destinationStationName = "부산";
         }
         hideBoard();
     }
@@ -119,9 +180,11 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
         if (stationType == START_STATION) {
             TextView startStationView = findViewById(R.id.startStation);
             startStationView.setText("동대구");
+            startStationName = "동대구";
         } else {
             TextView destinationStationView = findViewById(R.id.destinationStation);
             destinationStationView.setText("동대구");
+            destinationStationName = "동대구";
         }
         hideBoard();
     }
@@ -130,9 +193,11 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
         if (stationType == START_STATION) {
             TextView startStationView = findViewById(R.id.startStation);
             startStationView.setText(getString(R.string.seoul));
+            startStationName = getString(R.string.seoul);
         } else {
             TextView destinationStationView = findViewById(R.id.destinationStation);
             destinationStationView.setText(getString(R.string.seoul));
+            destinationStationName = getString(R.string.seoul);
         }
         hideBoard();
     }
@@ -141,9 +206,11 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
         if (stationType == START_STATION) {
             TextView startStationView = findViewById(R.id.startStation);
             startStationView.setText(getString(R.string.daejeon));
+            startStationName = getString(R.string.daejeon);
         } else {
             TextView destinationStationView = findViewById(R.id.destinationStation);
             destinationStationView.setText(getString(R.string.daejeon));
+            destinationStationName = getString(R.string.daejeon);
         }
         hideBoard();
     }
