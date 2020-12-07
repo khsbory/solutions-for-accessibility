@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CollectionItemInfoTest</string>
+    <string name="accessibility_service_description">accessibility service to test collection item info accessiblity</string>
+    <string name="accessibility_service_label">collection item info accessibility service</string>
+</resources>
