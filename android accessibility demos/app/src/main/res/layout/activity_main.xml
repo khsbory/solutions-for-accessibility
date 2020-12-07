@@ -102,6 +102,6 @@ android:text="@string/progressBar"/>
         android:layout_height="wrap_content"
         android:id="@+id/korailTalk"
         android:layout_gravity="center"
-        android:text="@string/korailTalk"/>
+        android:text="@string/startEnd"/>
 </LinearLayout>
 </ScrollView>

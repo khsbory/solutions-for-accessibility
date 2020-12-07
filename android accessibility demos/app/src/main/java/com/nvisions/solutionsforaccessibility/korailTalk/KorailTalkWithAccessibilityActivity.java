@@ -4,13 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,20 +31,17 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_korail_talk_with_accessibility);
+        setTitle(getString(R.string.goodExample));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setButtonsForAccessibility();
     }
 
     private void setButtonsForAccessibility() {
         TextView startStationView = findViewById(R.id.startStation);
-        ViewCompat.replaceAccessibilityAction(startStationView, ACTION_CLICK,
-                "출발역 변경", null
-                );
-
+        ViewCompat.replaceAccessibilityAction(startStationView, ACTION_CLICK, getString(R.string.changeStartStation), null);
         TextView destinationStationView = findViewById(R.id.destinationStation);
-        ViewCompat.replaceAccessibilityAction(destinationStationView, ACTION_CLICK,
-                "도착역 변경", null);
+        ViewCompat.replaceAccessibilityAction(destinationStationView, ACTION_CLICK, getString(R.string.changeArrivingStation), null);
     }
-
 
     private void showBoard() {
         ConstraintLayout board = findViewById(R.id.board);
@@ -57,9 +57,11 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
 
         if (stationType == START_STATION) {
             TextView startStationView = findViewById(R.id.startStation);
+            startStationView.setSelected(false);
             startStationView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
            } else {
             TextView destinationStationView = findViewById(R.id.destinationStation);
+            destinationStationView.setSelected(false);
             destinationStationView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
           }
     }
@@ -71,12 +73,19 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
     public void setStartStation(View view) {
         showBoard();
         stationType = START_STATION;
-
-    }
+        TextView startStationView = findViewById(R.id.startStation);
+        TextView destinationStationView = findViewById(R.id.destinationStation);
+        startStationView.setSelected(true);
+        destinationStationView.setSelected(false);
+            }
 
     public void setDestinationStation(View view) {
         showBoard();
         stationType = DESTINATION_STATION;
+        TextView destinationStationView = findViewById(R.id.destinationStation);
+        TextView startStationView = findViewById(R.id.startStation);
+        destinationStationView.setSelected(true);
+        startStationView.setSelected(false);
     }
 
     public void changeStation(View view) {
@@ -116,4 +125,28 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
         }
         hideBoard();
     }
+
+    public void setSeoulStation(View view) {
+        if (stationType == START_STATION) {
+            TextView startStationView = findViewById(R.id.startStation);
+            startStationView.setText(getString(R.string.seoul));
+        } else {
+            TextView destinationStationView = findViewById(R.id.destinationStation);
+            destinationStationView.setText(getString(R.string.seoul));
+        }
+        hideBoard();
+    }
+
+    public void setDaejeonStation(View view) {
+        if (stationType == START_STATION) {
+            TextView startStationView = findViewById(R.id.startStation);
+            startStationView.setText(getString(R.string.daejeon));
+        } else {
+            TextView destinationStationView = findViewById(R.id.destinationStation);
+            destinationStationView.setText(getString(R.string.daejeon));
+        }
+        hideBoard();
+    }
+
 }
+

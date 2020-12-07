@@ -168,5 +168,16 @@
     <string name="korailTalk">코레일톡</string>
     <string name="without_accessibility">접근성이 적용되지 않은 경우</string>
     <string name="with_accessibility">접근성이 적용된 경우</string>
+<string name="changeStartStation">출발역 변경</string>
+<string name="changeArrivingStation">도착역 변경</string>
+<string name="seoul">서울</string>
+<string name="daejeon">대전</string>
+<string name="startEndSimulation">출발, 도착역 선택 시뮬레이션</string>
+    <string name="startEndExplain">화면에 레이어가 표시되거나 레이어가 사라지는 경우 초점 이동에 대한 접근성 구현이 필요합니다. 또한 버튼, 체크박스와 같은 각 컨트롤은 스크린 리더 사용자에게 의미에 맞게 제공해 주어야 합니다.</string>
+<string name="startEnd">출발, 도착역 설정 시뮬레이션</string>
+<string name="setStartStation">출발역</string>
+    <string name="setDestinationStation">도착역</string>
+<string name="trainReservation">승차권 예매</string>
+<string name="changeStartEndOrder">출발, 도착역 바꾸기</string>
 
 </resources>

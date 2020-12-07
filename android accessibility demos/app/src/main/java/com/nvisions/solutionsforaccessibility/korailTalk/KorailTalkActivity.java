@@ -14,6 +14,8 @@ public class KorailTalkActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_korail_talk);
+        setTitle(getString(R.string.startEnd));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void launchKarailTalkWithoutAccessibilityActivity(View view) {

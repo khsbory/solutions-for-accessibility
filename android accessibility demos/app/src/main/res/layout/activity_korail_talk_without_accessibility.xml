@@ -12,7 +12,7 @@
         android:layout_height="70dp"
         android:background="@android:color/holo_blue_bright"
         android:gravity="center"
-        android:text="승차권 예매"
+        android:text="@string/trainReservation"
         android:textColor="@android:color/black"
         android:textSize="16dp"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="출발"
+        android:text="@string/setStartStation"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toStartOf="@id/changeStationButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         android:layout_height="50dp"
         android:background="@drawable/change"
         android:onClick="changeStation"
-        android:contentDescription="출발역 도착역을 바꿉니다"
+
         app:layout_constraintBottom_toBottomOf="@id/startStationLabel"
         app:layout_constraintEnd_toStartOf="@id/destinationStationLabel"
         app:layout_constraintStart_toEndOf="@id/startStationLabel"
@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="도착역"
+        android:text="@string/setDestinationStation"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/changeStationButton"
@@ -133,5 +133,31 @@
             android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/busan" />
+        <TextView
+            android:id="@+id/seoul"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/seoul"
+            android:onClick="setSeoulStation"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dongdaegu" />
+
+        <TextView
+            android:id="@+id/daejeon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/daejeon"
+            android:onClick="setDaejeonStation"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seoul" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
