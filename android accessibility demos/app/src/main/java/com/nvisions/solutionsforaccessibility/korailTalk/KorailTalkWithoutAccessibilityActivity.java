@@ -1,18 +1,23 @@
 package com.nvisions.solutionsforaccessibility.korailTalk;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.nvisions.solutionsforaccessibility.R;
 
 public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
+    private int peopleCountInt = 1;
 
     private int stationType = 0;
     private final int START_STATION = 0;
@@ -195,6 +200,70 @@ public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
         hideBoard();
     }
 
+    public void setPeopleCount(View view) {
+        peopleCountInt = 1;
+
+        final AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+        alert.setTitle("알림");
+        alert.setMessage("인원수를 선택해주세요");
+
+        LinearLayout linearLayout = new LinearLayout(this);
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+
+        SeekBar seekBar=new SeekBar(this);
+        seekBar.setMin(1);
+        seekBar.setMax(8);
+
+        final TextView peopleCount = new TextView(this);
+        peopleCount.setText("1명");
+        peopleCount.setPadding(20, 20, 0,0);
+
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                peopleCount.setText(i + "명");
+                peopleCountInt = i;
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        linearLayout.addView(seekBar);
+        linearLayout.addView(peopleCount);
+        alert.setView(linearLayout);
+
+        alert.setPositiveButton("확인",new DialogInterface.OnClickListener()
+        {
+            public void onClick(DialogInterface dialog,int id)
+            {
+                dialog.dismiss();
+
+                TextView peopleCountView = findViewById(R.id.peopleCount);
+                peopleCountView.setText(peopleCountInt + "명");
+            }
+        });
+
+        alert.setNegativeButton("취소",new DialogInterface.OnClickListener()
+        {
+            public void onClick(DialogInterface dialog,int id)
+            {
+                dialog.dismiss();
+            }
+        });
+
+        alert.show();
+    }
 }
 
 

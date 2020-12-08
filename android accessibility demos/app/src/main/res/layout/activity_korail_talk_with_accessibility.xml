@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".korailTalk.KorailTalkWithoutAccessibilityActivity">
+    tools:context=".korailTalk.KorailTalkWithAccessibilityActivity">
 
     <TextView
         android:id="@+id/screenTitle"
@@ -94,6 +94,28 @@ android:text="@string/setDestinationStation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/arrow"
         app:layout_constraintTop_toBottomOf="@id/startStationLabel" />
+    <TextView
+        android:id="@+id/peopleCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="인원수"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        />
+
+    <TextView
+        android:id="@+id/peopleCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1명"
+        android:onClick="setPeopleCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/peopleCountLabel"
+        />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
