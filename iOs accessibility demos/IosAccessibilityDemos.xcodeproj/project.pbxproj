@@ -24,6 +24,8 @@
 		B332191D2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */; };
 		B33219222579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */; };
 		B33C9A27257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */; };
+		B3403810258076570087BE07 /* FruitTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340380F258076570087BE07 /* FruitTableCell.swift */; };
+		B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3403814258076A90087BE07 /* VegetableTableCell.swift */; };
 		B34FF6D3256612C00026AF2E /* WebViewWithoutA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34FF6D2256612C00026AF2E /* WebViewWithoutA.storyboard */; };
 		B34FF6DB256614F50026AF2E /* WebViewWithA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34FF6DA256614F50026AF2E /* WebViewWithA.storyboard */; };
 		B35BF8772563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BF8762563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift */; };
@@ -78,6 +80,8 @@
 		B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoWithAViewController.swift; sourceTree = "<group>"; };
 		B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoWithA.storyboard; sourceTree = "<group>"; };
 		B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoWithoutA.storyboard; sourceTree = "<group>"; };
+		B340380F258076570087BE07 /* FruitTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTableCell.swift; sourceTree = "<group>"; };
+		B3403814258076A90087BE07 /* VegetableTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableTableCell.swift; sourceTree = "<group>"; };
 		B34FF6D2256612C00026AF2E /* WebViewWithoutA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewWithoutA.storyboard; sourceTree = "<group>"; };
 		B34FF6DA256614F50026AF2E /* WebViewWithA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewWithA.storyboard; sourceTree = "<group>"; };
 		B35BF8762563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoWithAccessibilityViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */,
 				B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */,
 				B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */,
+				B340380F258076570087BE07 /* FruitTableCell.swift */,
+				B3403814258076A90087BE07 /* VegetableTableCell.swift */,
 			);
 			path = AccessibilityFocusDemo;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8501EF2518816700B99181 /* ViewController.swift in Sources */,
+				B3403810258076570087BE07 /* FruitTableCell.swift in Sources */,
 				1F8501EB2518816700B99181 /* AppDelegate.swift in Sources */,
 				1F85021B2518852B00B99181 /* TableCell.swift in Sources */,
 				B332191D2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift in Sources */,
@@ -350,6 +357,7 @@
 				1F85021E25188B6A00B99181 /* VerticalScrollDemoViewController.swift in Sources */,
 				B37E840425650D4900DCD7DF /* WebViewDemoViewController.swift in Sources */,
 				B37E84172565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift in Sources */,
+				B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */,
 				B33219182579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift in Sources */,
 				B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */,
 			);

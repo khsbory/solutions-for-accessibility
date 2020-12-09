@@ -8,93 +8,74 @@
 
 import UIKit
 
-class AccessibilityFocusDemoWithoutAViewController: UIViewController {
+class AccessibilityFocusDemoWithoutAViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var label1: UILabel!
+    var fruits:[String] =
+        ["사과", "배", "바나나", "딸기", "오렌지", "키위", "수박", "멜론", "참외", "파인애플"]
+    var vegetables:[String] =
+        ["시금치", "콩나물", "토마토", "콩", "치나물", "오이", "배추", "고구마", "감자", "부추"]
     
-    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var fruitTable: UITableView!
     
-    @IBOutlet weak var label3: UILabel!
-    
-    
-    @IBOutlet weak var button1: UIView!
-    
-    @IBOutlet weak var button2: UIView!
-    
-    @IBOutlet weak var button3: UIView!
+    @IBOutlet weak var vegetableTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        makeLayout()
-        addTapListenerToButtons()
+        // Do any additional setup after loading the view.
+        initTables()
     }
     
-    private func makeLayout() {
-        // Create Attachment
-        let imageAttachment = NSTextAttachment()
-        imageAttachment.image = UIImage(named:"bank")
-        // Set bound to reposition       
-        imageAttachment.bounds = CGRect(x: 0, y: 0, width: 20, height: 20)
-        // Create string with attachment
-        let attachmentString = NSAttributedString(attachment: imageAttachment)
-        // Initialize mutable string
-        let completeText = NSMutableAttributedString(string: "")
-        // Add image to mutable string
-        completeText.append(attachmentString)
-        // Add your text to mutable string
-        let textAfterIcon = NSAttributedString(string: "Using attachment.bounds!")
-        completeText.append(textAfterIcon)
-        self.label1.textAlignment = .center
-        self.label1.attributedText = completeText
+    private func initTables() {
         
-        self.label2.textAlignment = .center
-        self.label2.attributedText = completeText
+        self.fruitTable.register(FruitTableCell.self, forCellReuseIdentifier: "fruitTableCell")
+        self.fruitTable.delegate = self
+        self.fruitTable.dataSource = self
+        self.fruitTable.rowHeight = 60
         
-        
-        self.label3.textAlignment = .center
-        self.label3.attributedText = completeText
-        
-        
+        self.vegetableTable.register(VegetableTableCell.self, forCellReuseIdentifier: "vegetableTableCell")
+        self.vegetableTable.delegate = self
+        self.vegetableTable.dataSource = self
+        self.vegetableTable.rowHeight = 60
     }
     
-    private func addTapListenerToButtons() {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (tableView == fruitTable) {
+            return fruits.count
+        } else if (tableView == vegetableTable) {
+            return vegetables.count
+        }
         
-        
-        
-        
-        
-        
-        let button1TapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onButton1Tapped(_:)))
-        button1TapGesture.numberOfTapsRequired = 1
-        button1TapGesture.numberOfTouchesRequired = 1
-        button1.addGestureRecognizer(button1TapGesture)
-        button1.isUserInteractionEnabled = true
-        
-        let button2TapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onButton2Tapped(_:)))
-        button2TapGesture.numberOfTapsRequired = 1
-        button2TapGesture.numberOfTouchesRequired = 1
-        button2.addGestureRecognizer(button2TapGesture)
-        button2.isUserInteractionEnabled = true
-
-        let button3TapGesture = UITapGestureRecognizer(target: self, action: #selector(self.onButton3Tapped(_:)))
-        button3TapGesture.numberOfTapsRequired = 1
-        button3TapGesture.numberOfTouchesRequired = 1
-        button3.addGestureRecognizer(button3TapGesture)
-        button3.isUserInteractionEnabled = true
-        
+        return 0
     }
     
-    @objc func onButton1Tapped(_ sender: UITapGestureRecognizer) {
-        print("onButton1Tapped")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (tableView == fruitTable) {
+            let cell =
+                tableView.dequeueReusableCell(
+                    withIdentifier: "fruitTableCell",
+                    for: indexPath
+                    ) as! FruitTableCell
+            cell.fruitName = fruits[indexPath.row]
+            cell.layoutSubviews()
+            return cell
+        } else if (tableView == vegetableTable) {
+            let cell =
+                tableView.dequeueReusableCell(
+                    withIdentifier: "vegetableTableCell",
+                    for: indexPath
+                    ) as! VegetableTableCell
+            cell.vegetableName = vegetables[indexPath.row]
+            cell.layoutSubviews()
+            return cell
+        }
+        
+        return UITableViewCell()
     }
     
-    @objc func onButton2Tapped(_ sender: UITapGestureRecognizer) {
-        print("onButton2Tapped")
-    }
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     }
     
-    
-    @objc func onButton3Tapped(_ sender: UITapGestureRecognizer) {
-        print("onButton3Tapped")
-    }
+   
 }
+
+
