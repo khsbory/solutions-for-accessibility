@@ -180,4 +180,8 @@
 <string name="trainReservation">승차권 예매</string>
 <string name="changeStartEndOrder">출발, 도착역 바꾸기</string>
 
+    <string name="accessibility_service_description">accessibility service to test Korailtalk accessibility</string>
+    <string name="accessibility_service_label">Korailtalk accessibility service</string>
+    <string name="voiceSearch">음성검색 시뮬레이션</string>
+
 </resources>
