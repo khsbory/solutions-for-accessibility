@@ -18,7 +18,6 @@ import com.nvisions.solutionsforaccessibility.R;
 
 public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
     private int peopleCountInt = 1;
-
     private int stationType = 0;
     private final int START_STATION = 0;
     private final int DESTINATION_STATION = 1;
@@ -145,7 +144,9 @@ public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
 
 
         startStationView.setText(destinationStation);
+        startStationName = destinationStation;
         destinationStationView.setText(startStation);
+        destinationStationName = startStation;
     }
 
     public void setBusanStation(View view) {
@@ -205,7 +206,7 @@ public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
 
         final AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
-        alert.setTitle("알림");
+        alert.setTitle(getString(R.string.peopleCountLabel));
         alert.setMessage("인원수를 선택해주세요");
 
         LinearLayout linearLayout = new LinearLayout(this);
@@ -224,7 +225,6 @@ public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
 
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                peopleCount.setText(i + "명");
                 peopleCountInt = i;
             }
 
@@ -235,7 +235,7 @@ public class KorailTalkWithoutAccessibilityActivity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-
+                peopleCount.setText(peopleCountInt + "명");
             }
         });
 

@@ -15,18 +15,19 @@ public class VoiceSearchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_korail_talk);
-        setTitle(getString(R.string.startEnd));
+        setContentView(R.layout.activity_voice_search);
+        setTitle(getString(R.string.voiceSearch));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-    public void launchKarailTalkWithoutAccessibilityActivity(View view) {
-        Intent intent = new Intent(getApplicationContext(), KorailTalkWithoutAccessibilityActivity.class);
+    public void launchVoiceSearchWithoutAccessibilityActivity(View view) {
+        Intent intent = new Intent(getApplicationContext(), VoiceSearchWithoutAccessibilityActivity.class);
         startActivity(intent);
     }
 
-    public void launchKarailTalkWithAccessibilityActivity(View view) {
-        Intent intent = new Intent(getApplicationContext(), KorailTalkWithAccessibilityActivity.class);
+    public void launchVoiceSearchWithAccessibility(View view) {
+        Intent intent = new Intent(getApplicationContext(), VoiceSearchWithAccessibilityActivity.class);
         startActivity(intent);
     }
 }
+

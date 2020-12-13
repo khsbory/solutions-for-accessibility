@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".VoiceSearch.VoiceSearchActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".VoiceSearch.VoiceSearchWithAccessibilityActivity" android:parentActivityName=".VoiceSearch.VoiceSearchActivity"/>
+        <activity android:name=".VoiceSearch.VoiceSearchWithoutAccessibilityActivity" android:parentActivityName=".VoiceSearch.VoiceSearchActivity"/>
         <activity android:name=".korailTalk.KorailTalkWithoutAccessibilityActivity"
             android:parentActivityName=".korailTalk.KorailTalkActivity"/>
         <activity android:name=".korailTalk.KorailTalkWithAccessibilityActivity"

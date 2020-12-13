@@ -179,9 +179,20 @@
     <string name="setDestinationStation">도착역</string>
 <string name="trainReservation">승차권 예매</string>
 <string name="changeStartEndOrder">출발, 도착역 바꾸기</string>
-
     <string name="accessibility_service_description">accessibility service to test Korailtalk accessibility</string>
     <string name="accessibility_service_label">Korailtalk accessibility service</string>
     <string name="voiceSearch">음성검색 시뮬레이션</string>
+<string name="busan">부산</string>
+<string name="dongdaegu">동대구</string>
+<string name="peopleCountLabel">인원수</string>
+<string name="peopleCount">1명</string>
+<string name="popupLayer">팝업 레이어</string>
+<string name="choosePeopleCount">인원수를 선택해 주세요.</string>
+<string name="peopleNumber">명</string>
+<string name="voiceSearchExplain">음성 검색이 실행되는 경우에는 톡백이 화면의 내용을 전혀 읽지 못하게 구현을 해야 합니다. 또한 음성 검색을 종료했을 때 에러 메시지가 출력되는 경우에는 반드시 이를 음성 출력할 수 있도록 구형해야 합니다.</string>
+    <string name="voiceListening">듣는 중</string>
+    <string name="voiceCancel">취소</string>
+    <string name="voiceListen">듣기</string>
+    <string name="voiceNotUnderstand">말을 잘 이해하지 못했어요.</string>
 
 </resources>
