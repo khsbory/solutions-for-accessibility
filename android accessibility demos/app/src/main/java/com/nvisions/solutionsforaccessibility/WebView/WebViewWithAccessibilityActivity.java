@@ -1,7 +1,5 @@
 package com.nvisions.solutionsforaccessibility.WebView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -11,7 +9,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.nvisions.solutionsforaccessibility.R;
 
@@ -27,8 +26,7 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         browser=findViewById(R.id.browser);
         progressBar = findViewById(R.id.progressBar);
-
-        WebSettings websettings = browser.getSettings();
+                WebSettings websettings = browser.getSettings();
         websettings.setDomStorageEnabled(true);  // Open DOM storage function
         websettings.setAppCacheMaxSize(1024*1024*8);
         String appCachePath = getApplicationContext().getCacheDir().getAbsolutePath();
@@ -36,7 +34,6 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
         websettings.setAllowFileAccess(true);    // Readable file cache
         websettings.setAppCacheEnabled(true);    //Turn on the H5(APPCache) caching function
         websettings.setJavaScriptEnabled(true);
-
         browser.setWebViewClient(new WebViewClient() {
             public void onPageStarted(WebView view, String url,
                                       android.graphics.Bitmap favicon) {
@@ -82,3 +79,4 @@ public class WebViewWithAccessibilityActivity extends AppCompatActivity {
         }
     }
 }
+

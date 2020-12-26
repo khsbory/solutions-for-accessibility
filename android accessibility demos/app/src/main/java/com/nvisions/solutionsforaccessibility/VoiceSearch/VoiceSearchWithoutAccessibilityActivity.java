@@ -4,12 +4,10 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.view.accessibility.AccessibilityEvent;
 import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.ViewCompat;
 
 import com.nvisions.solutionsforaccessibility.R;
 
@@ -50,9 +48,11 @@ mediaPlayer.start();
                 TextView textView = (TextView)findViewById(R.id.textView3);
                 if (example1.getText().toString() == getString(R.string.voiceCancel)) {
     example1.setText(R.string.voiceListen);
+                    example1.setEnabled(true);
     textView.setVisibility(View.GONE);
                 } else {
                     example1.setText(R.string.voiceCancel);
+                    example1.setEnabled(false);
                     mediaPlayer.start();
                     textView.setText(R.string.voiceListening);
                 }
@@ -66,6 +66,7 @@ mediaPlayer.start();
                 textView.setText(R.string.voiceNotUnderstand);
                 Button example1 = (Button)findViewById(R.id.button1);
                 example1.setText(R.string.voiceListen);
+                example1.setEnabled(true);
             }
         }, 5000);
     }

@@ -1,10 +1,10 @@
 package com.nvisions.solutionsforaccessibility.korailTalk;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.nvisions.solutionsforaccessibility.R;
 

@@ -7,8 +7,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.nvisions.solutionsforaccessibility.R;
-import com.nvisions.solutionsforaccessibility.korailTalk.KorailTalkWithAccessibilityActivity;
-import com.nvisions.solutionsforaccessibility.korailTalk.KorailTalkWithoutAccessibilityActivity;
 
 public class VoiceSearchActivity extends AppCompatActivity {
 

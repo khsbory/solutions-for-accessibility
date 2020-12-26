@@ -1,30 +1,21 @@
 package com.nvisions.solutionsforaccessibility.korailTalk;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.view.AccessibilityDelegateCompat;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
-import androidx.core.view.accessibility.AccessibilityViewCommand;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
-import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.ViewCompat;
 
 import com.nvisions.solutionsforaccessibility.R;
 
@@ -65,7 +56,7 @@ public class KorailTalkWithAccessibilityActivity extends AppCompatActivity {
         TextView destinationStationView = findViewById(R.id.destinationStation);
         ViewCompat.replaceAccessibilityAction(destinationStationView, ACTION_CLICK, getString(R.string.changeArrivingStation), null);
         TextView peopleCountLabel = findViewById(R.id.peopleCount);
-        ViewCompat.replaceAccessibilityAction(peopleCountLabel, ACTION_CLICK, getString(R.string.peopleCountLabel), null);
+        ViewCompat.replaceAccessibilityAction(peopleCountLabel, ACTION_CLICK, getString(R.string.changePeopleCount), null);
     }
 
     private void showBoard() {
@@ -117,6 +108,7 @@ if (startStationName == getString(R.string.seoul)) {
 
         Button closeButton = findViewById(R.id.closeButton);
         closeButton.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+        closeButton.requestFocus();
     }
 
     private void hideBoard() {
@@ -126,10 +118,12 @@ if (startStationName == getString(R.string.seoul)) {
             TextView startStationView = findViewById(R.id.startStation);
             startStationView.setSelected(false);
             startStationView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+            startStationView.requestFocus();
         } else {
             TextView destinationStationView = findViewById(R.id.destinationStation);
             destinationStationView.setSelected(false);
             destinationStationView.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED);
+            destinationStationView.requestFocus();
         }
     }
 
