@@ -14,7 +14,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var demoTitles:[String] =
-        ["가로 스크롤 접근성 데모", "웹뷰", "접근성 포커스 데모", "가로 스크롤 접근성 데모 2"]
+        ["가로 스크롤 접근성 데모", "웹뷰", "접근성 포커스 데모", "가로스크롤 접근성 데모 2"]
     @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if (indexPath.row == 2) {
             showScreenOnOtherStoryboard(storyboardName: "AccessibilityFocusDemo", viewControllerStoryboardId: "accessibilityFocusDemo")
         } else if (indexPath.row == 3) {
-            showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo2", viewControllerStoryboardId: "verticalScrollDemo2")
+            showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo2Main", viewControllerStoryboardId: "verticalScrollDemo2Main")
         }
     }
     

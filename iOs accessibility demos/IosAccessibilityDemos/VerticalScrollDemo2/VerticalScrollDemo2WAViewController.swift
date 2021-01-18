@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VerticalScrollDemo2ViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class VerticalScrollDemo2WAViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     @IBOutlet weak var pageContainer: UIView!
     
@@ -39,7 +39,7 @@ class VerticalScrollDemo2ViewController: UIViewController, UIPageViewControllerD
         self.pageVC.delegate = self
         
         //UIPageViewController는 하단에 자동으로 page indicator가 생김. 배경이 흰색이면 indicator가 안보일 수 있음
-        let startVC = UIStoryboard(name: "FirstPage", bundle: nil).instantiateViewController(withIdentifier: "firstPage") as? FirstPageViewController
+        let startVC = UIStoryboard(name: "FirstPageWA", bundle: nil).instantiateViewController(withIdentifier: "firstPageWA") as? FirstPageWAViewController
         
         
         let viewControllers = [startVC]
@@ -69,9 +69,9 @@ class VerticalScrollDemo2ViewController: UIViewController, UIPageViewControllerD
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed {
          
-            if pageVC.viewControllers![0] is FirstPageViewController {
+            if pageVC.viewControllers![0] is FirstPageWAViewController {
                 currentIdx = 0
-            } else if pageVC.viewControllers![0] is SecondPageViewController {
+            } else if pageVC.viewControllers![0] is SecondPageWAViewController {
                 currentIdx = 1
             }
             
@@ -85,7 +85,7 @@ class VerticalScrollDemo2ViewController: UIViewController, UIPageViewControllerD
         if (currentIdx == 0) {
            return nil
         } else if (currentIdx == 1) {
-            guard let vc = UIStoryboard(name: "FirstPage", bundle: nil).instantiateViewController(withIdentifier: "firstPage") as? FirstPageViewController else { return FirstPageViewController() }
+            guard let vc = UIStoryboard(name: "FirstPageWA", bundle: nil).instantiateViewController(withIdentifier: "firstPageWA") as? FirstPageWAViewController else { return FirstPageWAViewController() }
             return vc
         }
         return nil
@@ -95,7 +95,7 @@ class VerticalScrollDemo2ViewController: UIViewController, UIPageViewControllerD
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
       
         if (currentIdx == 0) {
-            guard let vc = UIStoryboard(name: "SecondPage", bundle: nil).instantiateViewController(withIdentifier: "secondPage") as? SecondPageViewController else { return SecondPageViewController() }
+            guard let vc = UIStoryboard(name: "SecondPageWA", bundle: nil).instantiateViewController(withIdentifier: "secondPageWA") as? SecondPageWAViewController else { return SecondPageWAViewController() }
             return vc
         } else if (currentIdx == 1) {
            return nil
