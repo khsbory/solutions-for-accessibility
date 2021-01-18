@@ -32,6 +32,12 @@
 		B32673C725B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673C625B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard */; };
 		B32673CC25B56B930067C5CE /* FirstPageWA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673CB25B56B930067C5CE /* FirstPageWA.storyboard */; };
 		B32673D125B56BA00067C5CE /* SecondPageWA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673D025B56BA00067C5CE /* SecondPageWA.storyboard */; };
+		B32673D725B570CD0067C5CE /* FilterDemoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673D625B570CD0067C5CE /* FilterDemoMainViewController.swift */; };
+		B32673DC25B570E70067C5CE /* FilterDemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */; };
+		B32673E125B571B70067C5CE /* FilterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673E025B571B70067C5CE /* FilterDemoViewController.swift */; };
+		B32673E625B571C70067C5CE /* FilterDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673E525B571C70067C5CE /* FilterDemo.storyboard */; };
+		B32673EB25B572090067C5CE /* FilterDemoWAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673EA25B572090067C5CE /* FilterDemoWAViewController.swift */; };
+		B32673F025B572180067C5CE /* FilterDemoWA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673EF25B572180067C5CE /* FilterDemoWA.storyboard */; };
 		B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */; };
 		B33219132579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */; };
 		B33219182579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */; };
@@ -46,6 +52,9 @@
 		B37E840425650D4900DCD7DF /* WebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E840325650D4900DCD7DF /* WebViewDemoViewController.swift */; };
 		B37E840925650D6000DCD7DF /* WebViewDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E840825650D6000DCD7DF /* WebViewDemo.storyboard */; };
 		B37E84172565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E84162565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift */; };
+		C258F8A64172CCBF6ACA81AD /* Pods_IosAccessibilityDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E9DDEA1F9B164E40F1C63E /* Pods_IosAccessibilityDemos.framework */; };
+		C50EA2E489948B301CE07F27 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2309218DADF49B74989DDBF6 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework */; };
+		DF62CE1D365F1E675BCC623E /* Pods_IosAccessibilityDemosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE540D3D513BD93A0CFFE616 /* Pods_IosAccessibilityDemosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123F3037B0DD15C00ED4E23C /* Pods-IosAccessibilityDemosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemosTests.release.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemosTests/Pods-IosAccessibilityDemosTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F8501E72518816700B99181 /* IosAccessibilityDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosAccessibilityDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8501EA2518816700B99181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8501EC2518816700B99181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +98,12 @@
 		1F8502272518A3CE00B99181 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		1F8502282518A3CE00B99181 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1F85022A2518A3E800B99181 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2309218DADF49B74989DDBF6 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E9DDEA1F9B164E40F1C63E /* Pods_IosAccessibilityDemos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosAccessibilityDemos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E94E82D9BE3E91625ABA2A3 /* Pods-IosAccessibilityDemos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemos.release.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemos/Pods-IosAccessibilityDemos.release.xcconfig"; sourceTree = "<group>"; };
+		A4DE4496BBD36CC80CFA2539 /* Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.debug.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9AEE454D9096C6A42EB44F0 /* Pods-IosAccessibilityDemos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemos.debug.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemos/Pods-IosAccessibilityDemos.debug.xcconfig"; sourceTree = "<group>"; };
+		ACE5551BEEAA82755248ED8B /* Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.release.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B326737425B5338B0067C5CE /* VerticalScrollDemo2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollDemo2ViewController.swift; sourceTree = "<group>"; };
 		B326737C25B533D80067C5CE /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
 		B326738125B533E80067C5CE /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +118,12 @@
 		B32673C625B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerticalScrollDemo2WA.storyboard; sourceTree = "<group>"; };
 		B32673CB25B56B930067C5CE /* FirstPageWA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPageWA.storyboard; sourceTree = "<group>"; };
 		B32673D025B56BA00067C5CE /* SecondPageWA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondPageWA.storyboard; sourceTree = "<group>"; };
+		B32673D625B570CD0067C5CE /* FilterDemoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoMainViewController.swift; sourceTree = "<group>"; };
+		B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemoMain.storyboard; sourceTree = "<group>"; };
+		B32673E025B571B70067C5CE /* FilterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoViewController.swift; sourceTree = "<group>"; };
+		B32673E525B571C70067C5CE /* FilterDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemo.storyboard; sourceTree = "<group>"; };
+		B32673EA25B572090067C5CE /* FilterDemoWAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoWAViewController.swift; sourceTree = "<group>"; };
+		B32673EF25B572180067C5CE /* FilterDemoWA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemoWA.storyboard; sourceTree = "<group>"; };
 		B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoViewController.swift; sourceTree = "<group>"; };
 		B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemo.storyboard; sourceTree = "<group>"; };
 		B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoWithoutAViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +138,8 @@
 		B37E840325650D4900DCD7DF /* WebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoViewController.swift; sourceTree = "<group>"; };
 		B37E840825650D6000DCD7DF /* WebViewDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewDemo.storyboard; sourceTree = "<group>"; };
 		B37E84162565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoWithoutAccessibilityViewController.swift; sourceTree = "<group>"; };
+		BE540D3D513BD93A0CFFE616 /* Pods_IosAccessibilityDemosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosAccessibilityDemosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1130A307714CB107C33C91 /* Pods-IosAccessibilityDemosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemosTests.debug.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemosTests/Pods-IosAccessibilityDemosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C258F8A64172CCBF6ACA81AD /* Pods_IosAccessibilityDemos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF62CE1D365F1E675BCC623E /* Pods_IosAccessibilityDemosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +163,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C50EA2E489948B301CE07F27 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		127713DC61B935C35E5A99B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62E9DDEA1F9B164E40F1C63E /* Pods_IosAccessibilityDemos.framework */,
+				2309218DADF49B74989DDBF6 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework */,
+				BE540D3D513BD93A0CFFE616 /* Pods_IosAccessibilityDemosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F8501DE2518816700B99181 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +187,8 @@
 				1F8502002518816800B99181 /* IosAccessibilityDemosTests */,
 				1F85020B2518816800B99181 /* IosAccessibilityDemosUITests */,
 				1F8501E82518816700B99181 /* Products */,
+				819ADE748981C41F935C37A0 /* Pods */,
+				127713DC61B935C35E5A99B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +205,7 @@
 		1F8501E92518816700B99181 /* IosAccessibilityDemos */ = {
 			isa = PBXGroup;
 			children = (
+				B32673D525B5707E0067C5CE /* FilterDemo */,
 				B326737325B5329C0067C5CE /* VerticalScrollDemo2 */,
 				B33219092579E5AE00B6B6C6 /* AccessibilityFocusDemo */,
 				B35BF8752563B993006858DF /* WebViewDemo */,
@@ -209,6 +249,19 @@
 			path = VerticalScrollDemo;
 			sourceTree = "<group>";
 		};
+		819ADE748981C41F935C37A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9AEE454D9096C6A42EB44F0 /* Pods-IosAccessibilityDemos.debug.xcconfig */,
+				8E94E82D9BE3E91625ABA2A3 /* Pods-IosAccessibilityDemos.release.xcconfig */,
+				A4DE4496BBD36CC80CFA2539 /* Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.debug.xcconfig */,
+				ACE5551BEEAA82755248ED8B /* Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.release.xcconfig */,
+				DE1130A307714CB107C33C91 /* Pods-IosAccessibilityDemosTests.debug.xcconfig */,
+				123F3037B0DD15C00ED4E23C /* Pods-IosAccessibilityDemosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B326737325B5329C0067C5CE /* VerticalScrollDemo2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +281,19 @@
 				B32673D025B56BA00067C5CE /* SecondPageWA.storyboard */,
 			);
 			path = VerticalScrollDemo2;
+			sourceTree = "<group>";
+		};
+		B32673D525B5707E0067C5CE /* FilterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B32673D625B570CD0067C5CE /* FilterDemoMainViewController.swift */,
+				B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */,
+				B32673E025B571B70067C5CE /* FilterDemoViewController.swift */,
+				B32673E525B571C70067C5CE /* FilterDemo.storyboard */,
+				B32673EA25B572090067C5CE /* FilterDemoWAViewController.swift */,
+				B32673EF25B572180067C5CE /* FilterDemoWA.storyboard */,
+			);
+			path = FilterDemo;
 			sourceTree = "<group>";
 		};
 		B33219092579E5AE00B6B6C6 /* AccessibilityFocusDemo */ = {
@@ -265,6 +331,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F8502112518816800B99181 /* Build configuration list for PBXNativeTarget "IosAccessibilityDemos" */;
 			buildPhases = (
+				0D937B9D24424DF95822D0DA /* [CP] Check Pods Manifest.lock */,
 				1F8501E32518816700B99181 /* Sources */,
 				1F8501E42518816700B99181 /* Frameworks */,
 				1F8501E52518816700B99181 /* Resources */,
@@ -282,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F8502142518816800B99181 /* Build configuration list for PBXNativeTarget "IosAccessibilityDemosTests" */;
 			buildPhases = (
+				AD0514A67247F192F46EA895 /* [CP] Check Pods Manifest.lock */,
 				1F8501F92518816800B99181 /* Sources */,
 				1F8501FA2518816800B99181 /* Frameworks */,
 				1F8501FB2518816800B99181 /* Resources */,
@@ -300,6 +368,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F8502172518816800B99181 /* Build configuration list for PBXNativeTarget "IosAccessibilityDemosUITests" */;
 			buildPhases = (
+				9A3B914E8381A32EC75A4E7C /* [CP] Check Pods Manifest.lock */,
 				1F8502042518816800B99181 /* Sources */,
 				1F8502052518816800B99181 /* Frameworks */,
 				1F8502062518816800B99181 /* Resources */,
@@ -371,14 +440,17 @@
 				B34FF6DB256614F50026AF2E /* WebViewWithA.storyboard in Resources */,
 				B326738C25B534390067C5CE /* FirstPage.storyboard in Resources */,
 				B33C9A27257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard in Resources */,
+				B32673DC25B570E70067C5CE /* FilterDemoMain.storyboard in Resources */,
 				B326738725B5342C0067C5CE /* VerticalScrollDemo2.storyboard in Resources */,
 				B326739125B5344A0067C5CE /* SecondPage.storyboard in Resources */,
 				B32673CC25B56B930067C5CE /* FirstPageWA.storyboard in Resources */,
 				1F8501F22518816700B99181 /* Main.storyboard in Resources */,
+				B32673F025B572180067C5CE /* FilterDemoWA.storyboard in Resources */,
 				B33219222579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard in Resources */,
 				B32673D125B56BA00067C5CE /* SecondPageWA.storyboard in Resources */,
 				B34FF6D3256612C00026AF2E /* WebViewWithoutA.storyboard in Resources */,
 				B37E840925650D6000DCD7DF /* WebViewDemo.storyboard in Resources */,
+				B32673E625B571C70067C5CE /* FilterDemo.storyboard in Resources */,
 				B33219132579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +471,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D937B9D24424DF95822D0DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosAccessibilityDemos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3B914E8381A32EC75A4E7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD0514A67247F192F46EA895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosAccessibilityDemosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F8501E32518816700B99181 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -411,12 +552,15 @@
 				1F85021B2518852B00B99181 /* TableCell.swift in Sources */,
 				B332191D2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift in Sources */,
 				B32673B325B5694A0067C5CE /* SecondPageWAViewController.swift in Sources */,
+				B32673D725B570CD0067C5CE /* FilterDemoMainViewController.swift in Sources */,
 				B35BF8772563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift in Sources */,
+				B32673E125B571B70067C5CE /* FilterDemoViewController.swift in Sources */,
 				1F8501ED2518816700B99181 /* SceneDelegate.swift in Sources */,
 				1F85021E25188B6A00B99181 /* VerticalScrollDemoViewController.swift in Sources */,
 				B326737525B5338B0067C5CE /* VerticalScrollDemo2ViewController.swift in Sources */,
 				B37E840425650D4900DCD7DF /* WebViewDemoViewController.swift in Sources */,
 				B32673B825B569670067C5CE /* VerticalScrollDemo2WAViewController.swift in Sources */,
+				B32673EB25B572090067C5CE /* FilterDemoWAViewController.swift in Sources */,
 				B37E84172565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift in Sources */,
 				B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */,
 				B326737D25B533D80067C5CE /* FirstPageViewController.swift in Sources */,
@@ -609,6 +753,7 @@
 		};
 		1F8502122518816800B99181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AEE454D9096C6A42EB44F0 /* Pods-IosAccessibilityDemos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -627,6 +772,7 @@
 		};
 		1F8502132518816800B99181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E94E82D9BE3E91625ABA2A3 /* Pods-IosAccessibilityDemos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -645,6 +791,7 @@
 		};
 		1F8502152518816800B99181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1130A307714CB107C33C91 /* Pods-IosAccessibilityDemosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,6 +814,7 @@
 		};
 		1F8502162518816800B99181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123F3037B0DD15C00ED4E23C /* Pods-IosAccessibilityDemosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -689,6 +837,7 @@
 		};
 		1F8502182518816800B99181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4DE4496BBD36CC80CFA2539 /* Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -709,6 +858,7 @@
 		};
 		1F8502192518816800B99181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE5551BEEAA82755248ED8B /* Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
