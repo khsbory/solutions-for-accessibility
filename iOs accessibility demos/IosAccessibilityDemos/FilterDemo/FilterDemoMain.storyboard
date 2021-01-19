@@ -46,27 +46,38 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GgB-dX-Rt2">
                                 <rect key="frame" x="0.0" y="87" width="414" height="792"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-3H-8Is">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-3H-8Is">
                                         <rect key="frame" x="123" y="100" width="168" height="30"/>
                                         <state key="normal" title="접근성이 적용되지 않은 경우"/>
                                         <connections>
                                             <action selector="launchViewControllerWithoutAccessibility:" destination="3DV-kE-AS0" eventType="touchUpInside" id="kgZ-Pm-iTe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPK-4o-vx4">
-                                        <rect key="frame" x="144.5" y="330" width="125" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPK-4o-vx4">
+                                        <rect key="frame" x="144.5" y="230" width="125" height="30"/>
                                         <state key="normal" title="접근성이 적용된 경우"/>
                                         <connections>
                                             <action selector="launchViewControllerWithAccessibility:" destination="3DV-kE-AS0" eventType="touchUpInside" id="GAJ-Ya-xbp"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="보이스오버 사용자가 라디오버튼, 체크박스, 확장축소 UI를 사용하도록 하려면 이에 대한 접근성 구현이 필요합니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LtB-rJ-waC">
+                                        <rect key="frame" x="20" y="310" width="374" height="482"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="UPK-4o-vx4" firstAttribute="top" secondItem="YRR-3H-8Is" secondAttribute="bottom" constant="200" id="8Vu-HY-DxF"/>
-                                    <constraint firstItem="YRR-3H-8Is" firstAttribute="centerX" secondItem="GgB-dX-Rt2" secondAttribute="centerX" id="TFo-vJ-gUO"/>
-                                    <constraint firstItem="UPK-4o-vx4" firstAttribute="centerX" secondItem="GgB-dX-Rt2" secondAttribute="centerX" id="YyE-24-iLz"/>
-                                    <constraint firstItem="YRR-3H-8Is" firstAttribute="top" secondItem="GgB-dX-Rt2" secondAttribute="top" constant="100" id="gDe-fb-PFb"/>
+                                    <constraint firstItem="LtB-rJ-waC" firstAttribute="bottom" secondItem="GgB-dX-Rt2" secondAttribute="bottom" id="1Fk-bG-G6b"/>
+                                    <constraint firstItem="UPK-4o-vx4" firstAttribute="centerX" secondItem="GgB-dX-Rt2" secondAttribute="centerX" id="6NY-2W-NDx"/>
+                                    <constraint firstItem="LtB-rJ-waC" firstAttribute="trailing" secondItem="GgB-dX-Rt2" secondAttribute="trailing" constant="-20" id="Fev-Ax-d37"/>
+                                    <constraint firstItem="LtB-rJ-waC" firstAttribute="leading" secondItem="GgB-dX-Rt2" secondAttribute="leading" constant="20" id="M96-52-Nqr"/>
+                                    <constraint firstItem="LtB-rJ-waC" firstAttribute="top" secondItem="UPK-4o-vx4" secondAttribute="bottom" constant="50" id="VxK-Xh-Oq1"/>
+                                    <constraint firstItem="YRR-3H-8Is" firstAttribute="centerX" secondItem="GgB-dX-Rt2" secondAttribute="centerX" id="ep4-bU-vk0"/>
+                                    <constraint firstItem="YRR-3H-8Is" firstAttribute="top" secondItem="GgB-dX-Rt2" secondAttribute="top" constant="100" id="ls3-cD-tar"/>
+                                    <constraint firstItem="UPK-4o-vx4" firstAttribute="top" secondItem="YRR-3H-8Is" secondAttribute="bottom" constant="100" id="ppU-wH-QHl"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -93,6 +104,9 @@
     </scenes>
     <resources>
         <image name="go_back_unpressed_small" width="128" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -20,19 +20,21 @@ class FilterDemoMainViewController: UIViewController {
     }
    
     @IBAction func launchViewControllerWithoutAccessibility(_ sender: Any) {
+        Constants.isAccessibilityApplied = false
          showScreenOnOtherStoryboard(storyboardName: "FilterDemo", viewControllerStoryboardId: "filterDemo")
         
     }
     
     @IBAction func launchViewControllerWithAccessibility(_ sender: Any) {
-        showScreenOnOtherStoryboard(storyboardName: "FilterDemoWA", viewControllerStoryboardId: "filterDemoWA")
+        Constants.isAccessibilityApplied = true
+        showScreenOnOtherStoryboard(storyboardName: "FilterDemo", viewControllerStoryboardId: "filterDemo")
         
     }
     
     private func showScreenOnOtherStoryboard(storyboardName:String, viewControllerStoryboardId:String) {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerStoryboardId)
-             
+        viewController.modalPresentationStyle = .fullScreen
         self.present(viewController, animated: true, completion: nil)
     }
     

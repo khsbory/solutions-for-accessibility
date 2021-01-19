@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,13 +36,12 @@
 		B32673DC25B570E70067C5CE /* FilterDemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */; };
 		B32673E125B571B70067C5CE /* FilterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673E025B571B70067C5CE /* FilterDemoViewController.swift */; };
 		B32673E625B571C70067C5CE /* FilterDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673E525B571C70067C5CE /* FilterDemo.storyboard */; };
-		B32673EB25B572090067C5CE /* FilterDemoWAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673EA25B572090067C5CE /* FilterDemoWAViewController.swift */; };
-		B32673F025B572180067C5CE /* FilterDemoWA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673EF25B572180067C5CE /* FilterDemoWA.storyboard */; };
 		B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */; };
 		B33219132579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */; };
 		B33219182579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */; };
 		B332191D2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */; };
 		B33219222579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */; };
+		B33255EB25B672DA00F6C8DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33255EA25B672DA00F6C8DD /* Constants.swift */; };
 		B33C9A27257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */; };
 		B3403810258076570087BE07 /* FruitTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340380F258076570087BE07 /* FruitTableCell.swift */; };
 		B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3403814258076A90087BE07 /* VegetableTableCell.swift */; };
@@ -122,13 +121,12 @@
 		B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemoMain.storyboard; sourceTree = "<group>"; };
 		B32673E025B571B70067C5CE /* FilterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoViewController.swift; sourceTree = "<group>"; };
 		B32673E525B571C70067C5CE /* FilterDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemo.storyboard; sourceTree = "<group>"; };
-		B32673EA25B572090067C5CE /* FilterDemoWAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoWAViewController.swift; sourceTree = "<group>"; };
-		B32673EF25B572180067C5CE /* FilterDemoWA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemoWA.storyboard; sourceTree = "<group>"; };
 		B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoViewController.swift; sourceTree = "<group>"; };
 		B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemo.storyboard; sourceTree = "<group>"; };
 		B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoWithoutAViewController.swift; sourceTree = "<group>"; };
 		B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoWithAViewController.swift; sourceTree = "<group>"; };
 		B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoWithA.storyboard; sourceTree = "<group>"; };
+		B33255EA25B672DA00F6C8DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoWithoutA.storyboard; sourceTree = "<group>"; };
 		B340380F258076570087BE07 /* FruitTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTableCell.swift; sourceTree = "<group>"; };
 		B3403814258076A90087BE07 /* VegetableTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableTableCell.swift; sourceTree = "<group>"; };
@@ -218,6 +216,7 @@
 				1F8501F52518816800B99181 /* LaunchScreen.storyboard */,
 				1F8501F82518816800B99181 /* Info.plist */,
 				1F85021A2518852B00B99181 /* TableCell.swift */,
+				B33255EA25B672DA00F6C8DD /* Constants.swift */,
 			);
 			path = IosAccessibilityDemos;
 			sourceTree = "<group>";
@@ -290,8 +289,6 @@
 				B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */,
 				B32673E025B571B70067C5CE /* FilterDemoViewController.swift */,
 				B32673E525B571C70067C5CE /* FilterDemo.storyboard */,
-				B32673EA25B572090067C5CE /* FilterDemoWAViewController.swift */,
-				B32673EF25B572180067C5CE /* FilterDemoWA.storyboard */,
 			);
 			path = FilterDemo;
 			sourceTree = "<group>";
@@ -335,6 +332,7 @@
 				1F8501E32518816700B99181 /* Sources */,
 				1F8501E42518816700B99181 /* Frameworks */,
 				1F8501E52518816700B99181 /* Resources */,
+				B3245FDE1FFADB6CC3B129B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +370,7 @@
 				1F8502042518816800B99181 /* Sources */,
 				1F8502052518816800B99181 /* Frameworks */,
 				1F8502062518816800B99181 /* Resources */,
+				650C05B16B293606524C9F90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -445,7 +444,6 @@
 				B326739125B5344A0067C5CE /* SecondPage.storyboard in Resources */,
 				B32673CC25B56B930067C5CE /* FirstPageWA.storyboard in Resources */,
 				1F8501F22518816700B99181 /* Main.storyboard in Resources */,
-				B32673F025B572180067C5CE /* FilterDemoWA.storyboard in Resources */,
 				B33219222579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard in Resources */,
 				B32673D125B56BA00067C5CE /* SecondPageWA.storyboard in Resources */,
 				B34FF6D3256612C00026AF2E /* WebViewWithoutA.storyboard in Resources */,
@@ -494,6 +492,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		650C05B16B293606524C9F90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests/Pods-IosAccessibilityDemos-IosAccessibilityDemosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9A3B914E8381A32EC75A4E7C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,6 +553,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B3245FDE1FFADB6CC3B129B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosAccessibilityDemos/Pods-IosAccessibilityDemos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosAccessibilityDemos/Pods-IosAccessibilityDemos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosAccessibilityDemos/Pods-IosAccessibilityDemos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -560,7 +592,6 @@
 				B326737525B5338B0067C5CE /* VerticalScrollDemo2ViewController.swift in Sources */,
 				B37E840425650D4900DCD7DF /* WebViewDemoViewController.swift in Sources */,
 				B32673B825B569670067C5CE /* VerticalScrollDemo2WAViewController.swift in Sources */,
-				B32673EB25B572090067C5CE /* FilterDemoWAViewController.swift in Sources */,
 				B37E84172565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift in Sources */,
 				B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */,
 				B326737D25B533D80067C5CE /* FirstPageViewController.swift in Sources */,
@@ -568,6 +599,7 @@
 				B33219182579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift in Sources */,
 				B32673BD25B569A20067C5CE /* VerticalScrollDemo2MainViewController.swift in Sources */,
 				B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */,
+				B33255EB25B672DA00F6C8DD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
