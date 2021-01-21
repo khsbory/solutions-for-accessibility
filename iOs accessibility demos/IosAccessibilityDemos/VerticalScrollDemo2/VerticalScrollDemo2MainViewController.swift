@@ -16,26 +16,30 @@ class VerticalScrollDemo2MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()   
         initBackButton()
-          
+        setScreenTitle()
+    }
+    
+    private func setScreenTitle() {       
+        self.title = "가로스크롤 접근성 데모 2"
     }
    
     @IBAction func launchVerticalScrollDemo2WithoutAccessibility(_ sender: Any) {
-        print("1")
+        Constants.isAccessibilityApplied = false
         showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo2", viewControllerStoryboardId: "verticalScrollDemo2")
         
     }
     
     @IBAction func launchVerticalScrollDemo2WithAccessibility(_ sender: Any) {
-        print("2")
-        showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo2WA", viewControllerStoryboardId: "verticalScrollDemo2WA")
+        Constants.isAccessibilityApplied = true
+        showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo2", viewControllerStoryboardId: "verticalScrollDemo2")
         
     }
     
     private func showScreenOnOtherStoryboard(storyboardName:String, viewControllerStoryboardId:String) {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerStoryboardId)
-             
-        self.present(viewController, animated: true, completion: nil)
+        //self.present(viewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     

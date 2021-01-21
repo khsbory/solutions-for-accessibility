@@ -22,8 +22,13 @@ class VerticalScrollDemo2ViewController: UIViewController, UIPageViewControllerD
         super.viewDidLoad()
         initViewPager()
         initBackButton()
-          
+        setScreenTitle()
     }
+    
+    private func setScreenTitle() {
+        self.title = Constants.isAccessibilityApplied ? "접근성이 적용된 경우" : "접근성이 적용되지 않은 경우"
+    }
+    
     
     private func initBackButton() {
         backButton.accessibilityTraits = .button

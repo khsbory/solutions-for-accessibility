@@ -17,20 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="텍스트 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjt-eW-y5r">
-                                <rect key="frame" x="178" y="442.5" width="58.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0jt-Ej-deX">
+                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="15U-6M-JMG"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
-                            <constraint firstItem="jjt-eW-y5r" firstAttribute="centerX" secondItem="15U-6M-JMG" secondAttribute="centerX" id="0QX-Kv-1pT"/>
-                            <constraint firstItem="jjt-eW-y5r" firstAttribute="centerY" secondItem="15U-6M-JMG" secondAttribute="centerY" id="g02-Z1-97B"/>
+                            <constraint firstItem="0jt-Ej-deX" firstAttribute="leading" secondItem="15U-6M-JMG" secondAttribute="leading" id="AxB-Ip-jGl"/>
+                            <constraint firstItem="0jt-Ej-deX" firstAttribute="trailing" secondItem="15U-6M-JMG" secondAttribute="trailing" id="Zwf-sL-jbN"/>
+                            <constraint firstItem="0jt-Ej-deX" firstAttribute="top" secondItem="15U-6M-JMG" secondAttribute="top" constant="-5" id="pL1-F5-RVq"/>
+                            <constraint firstItem="0jt-Ej-deX" firstAttribute="bottom" secondItem="15U-6M-JMG" secondAttribute="bottom" constant="-5" id="qrh-VB-Quu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="0jt-Ej-deX" id="qxt-vf-7KL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uap-z4-bSU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,6 +41,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

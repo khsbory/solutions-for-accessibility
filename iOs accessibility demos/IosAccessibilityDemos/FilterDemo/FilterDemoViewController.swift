@@ -63,6 +63,7 @@ class FilterDemoViewController: UIViewController {
     
     
     
+    @IBOutlet weak var closeSideMenuButton: UIButton!
     
     @IBOutlet weak var mainScreen: UIView!
     
@@ -81,7 +82,9 @@ class FilterDemoViewController: UIViewController {
             topBar.accessibilityElementsHidden = true
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                UIAccessibility.post(notification: .screenChanged , argument: "필터 열림")
+                UIAccessibility.post(notification: .announcement , argument: "필터 열림")
+                //필터를 열었을 때 숫자 섹션에 접근성 포커스를 맞춤
+                UIAccessibility.post(notification: .screenChanged, argument: self.closeSideMenuButton)
             })
             
             
@@ -97,6 +100,12 @@ class FilterDemoViewController: UIViewController {
         initNumberCheck()
         initAlphabetRadio()
         initFilterResult()
+        setScreenTitle()
+    }
+    
+    private func setScreenTitle() {
+      
+        self.title = Constants.isAccessibilityApplied ? "접근성이 적용된 경우" : "접근성이 적용되지 않은 경우"
     }
     
     private func initFilterResult() {
@@ -111,18 +120,144 @@ class FilterDemoViewController: UIViewController {
         filterResult.text = String(selectedFilterCount)
         filterButton.accessibilityLabel = "필터 선택된 필터 " + String(selectedFilterCount) + "개"
         
+        applyFilter()
+        
         
         if (Constants.isAccessibilityApplied) {
             mainScreen.accessibilityElementsHidden = false
             topBar.accessibilityElementsHidden = false
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                UIAccessibility.post(notification: .screenChanged , argument: "필터 닫힘")
+                UIAccessibility.post(notification: .announcement , argument: "필터 닫힘")
+                UIAccessibility.post(notification: .screenChanged, argument: self.filterButton)
             })
             
             
             
         }
+    }
+    
+    @IBOutlet weak var number1: UILabel!
+    @IBOutlet weak var number2: UILabel!
+    @IBOutlet weak var number3: UILabel!
+    @IBOutlet weak var number4: UILabel!
+    @IBOutlet weak var number5: UILabel!
+    @IBOutlet weak var number6: UILabel!
+    @IBOutlet weak var number7: UILabel!
+    @IBOutlet weak var number8: UILabel!
+    @IBOutlet weak var number9: UILabel!
+    @IBOutlet weak var number10: UILabel!
+    @IBOutlet weak var number11: UILabel!
+    @IBOutlet weak var number12: UILabel!
+    @IBOutlet weak var number13: UILabel!
+    @IBOutlet weak var number14: UILabel!
+    @IBOutlet weak var number15: UILabel!
+    @IBOutlet weak var number16: UILabel!
+    @IBOutlet weak var number17: UILabel!
+    @IBOutlet weak var number18: UILabel!
+    @IBOutlet weak var number19: UILabel!
+    @IBOutlet weak var number20: UILabel!
+    @IBOutlet weak var number21: UILabel!
+    @IBOutlet weak var number22: UILabel!
+    @IBOutlet weak var number23: UILabel!
+    @IBOutlet weak var number24: UILabel!
+    @IBOutlet weak var number25: UILabel!
+    @IBOutlet weak var number26: UILabel!
+    @IBOutlet weak var number27: UILabel!
+    @IBOutlet weak var number28: UILabel!
+    @IBOutlet weak var number29: UILabel!
+    @IBOutlet weak var number30: UILabel!
+    
+    private func applyFilter() {
+        number1.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number1.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number2.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number2.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number3.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number3.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number4.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number4.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number5.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number5.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number6.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number6.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number7.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number7.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number8.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number8.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number9.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number9.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number10.textColor = (number1Check.tag == SELECTED) ? .blue : .black
+        number10.accessibilityTraits = (number1Check.tag == SELECTED) ?  .selected : .none
+        
+        number11.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number11.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number12.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number12.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number13.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number13.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number14.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number14.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number15.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number15.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number16.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number16.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number17.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number17.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number18.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number18.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number19.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number19.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number20.textColor = (number2Check.tag == SELECTED) ? .blue : .black
+        number20.accessibilityTraits = (number2Check.tag == SELECTED) ?  .selected : .none
+        
+        number21.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number21.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number22.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number22.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number23.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number23.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number24.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number24.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number25.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number25.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number26.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number26.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number27.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number27.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number28.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number28.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number29.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number29.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
+        
+        number30.textColor = (number3Check.tag == SELECTED) ? .blue : .black
+        number30.accessibilityTraits = (number3Check.tag == SELECTED) ?  .selected : .none
     }
     
     
@@ -146,23 +281,38 @@ class FilterDemoViewController: UIViewController {
      숫자, 알파벳 섹션 펼치기 접기
      */
     
+    @IBOutlet weak var alphabetSectionlabel: UILabel!
+    
+    @IBOutlet weak var numberSectionlabel: UILabel!
+    
     private func initNumberSection() {
+       
         numberSection.isUserInteractionEnabled = true
         numberSection.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onNumberSectionClicked)))
+        numberSectionlabel.accessibilityTraits = .button
+        //숫자 섹션을 펼침
+        numberSection.tag = SELECTED
+        numberSectionlabel.accessibilityHint = "접기"
     }
     
     
     @objc func onNumberSectionClicked(){
         if (numberSection.tag == UNSELECTED) {
             openNumberSection()
+     
         } else if (numberSection.tag == SELECTED ) {
             closeNumberSection()
+        
         }
     }
     
     private func initAlphabetSection() {
         alphabetSection.isUserInteractionEnabled = true
         alphabetSection.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onAlphabetSectionClicked)))
+        alphabetSectionlabel.accessibilityTraits = .button
+        //알파벳 섹션을 접음
+        alphabetSection.tag = UNSELECTED
+        alphabetSectionlabel.accessibilityHint = "펼치기"
     }
     
     
@@ -180,10 +330,10 @@ class FilterDemoViewController: UIViewController {
         if (Constants.isAccessibilityApplied) {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                UIAccessibility.post(notification: .screenChanged , argument: "알파벳 필터 펼치기")
+                UIAccessibility.post(notification: .announcement , argument: "알파벳 필터 펼침")
             })
             
-            
+            alphabetSection.accessibilityHint = "접기"
             
         }
         
@@ -206,10 +356,10 @@ class FilterDemoViewController: UIViewController {
         if (Constants.isAccessibilityApplied) {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                UIAccessibility.post(notification: .screenChanged , argument: "알파벳 필터 접기")
+                UIAccessibility.post(notification: .announcement  , argument: "알파벳 필터 접음")
             })
             
-            
+            alphabetSection.accessibilityHint = "펼치기"
             
         }
         
@@ -230,15 +380,15 @@ class FilterDemoViewController: UIViewController {
         
     }
     
-    private func openNumberSection() {
+    private func closeNumberSection() {
         
         if (Constants.isAccessibilityApplied) {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                UIAccessibility.post(notification: .screenChanged , argument: "숫자 필터 펼치기")
+                UIAccessibility.post(notification: .announcement  , argument: "숫자 필터 접음")
             })
             
-            
+            numberSectionlabel.accessibilityHint = "펼치기"
             
         }
         
@@ -256,18 +406,19 @@ class FilterDemoViewController: UIViewController {
         number2HeightConstraint.constant = 60
         number3HeightConstraint.constant = 60
         
-        numberSection.tag = SELECTED
+        numberSection.tag = UNSELECTED
         
     }
     
-    private func closeNumberSection() {
+    private func openNumberSection() {
         if (Constants.isAccessibilityApplied) {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                UIAccessibility.post(notification: .screenChanged , argument: "숫자 필터 접기")
+                //.layoutChanged는 음성 안내를 안함
+                UIAccessibility.post(notification: .announcement , argument: "숫자 필터 펼침")
             })
             
-            
+            numberSectionlabel.accessibilityHint = "접기"
             
         }
         number1Label.isHidden = false
@@ -284,7 +435,7 @@ class FilterDemoViewController: UIViewController {
         number2HeightConstraint.constant = 60
         number3HeightConstraint.constant = 60
         
-        numberSection.tag = UNSELECTED
+        numberSection.tag = SELECTED
         
     }
     
@@ -326,12 +477,12 @@ class FilterDemoViewController: UIViewController {
             number1Check.tag = UNSELECTED
             
             if (Constants.isAccessibilityApplied) {
-                number1Label.accessibilityTraits = .button
+                number1Label.accessibilityTraits.remove(.selected)
             }
             
         } else if (number1Check.tag == UNSELECTED ){
             if (Constants.isAccessibilityApplied) {
-                number1Label.accessibilityTraits = .selected
+                number1Label.accessibilityTraits.insert(.selected)
             }
             
             number1Check.image = UIImage(named: "check")
@@ -343,7 +494,7 @@ class FilterDemoViewController: UIViewController {
     @objc func onNumber2CheckClicked(){
         if (number2Check.tag == SELECTED) {
             if (Constants.isAccessibilityApplied) {
-                number2Label.accessibilityTraits = .button
+                number2Label.accessibilityTraits.remove(.selected)
             }
             
             number2Check.image = UIImage(named: "uncheck")
@@ -352,7 +503,7 @@ class FilterDemoViewController: UIViewController {
         } else if (number2Check.tag == UNSELECTED ){
             if (Constants.isAccessibilityApplied) {
                 
-                number2Label.accessibilityTraits = .selected
+                number2Label.accessibilityTraits.insert(.selected)
             }
             
             number2Check.image = UIImage(named: "check")
@@ -368,7 +519,7 @@ class FilterDemoViewController: UIViewController {
         if (number3Check.tag == SELECTED) {
             if (Constants.isAccessibilityApplied) {
                 
-                number3Label.accessibilityTraits = .button
+                number3Label.accessibilityTraits.remove(.selected)
             }
             
             number3Check.image = UIImage(named: "uncheck")
@@ -378,7 +529,7 @@ class FilterDemoViewController: UIViewController {
         } else if (number3Check.tag == UNSELECTED ){
             if (Constants.isAccessibilityApplied) {
                 
-                number3Label.accessibilityTraits = .selected
+                number3Label.accessibilityTraits.insert(.selected)
             }
             
             number3Check.image = UIImage(named: "check")
@@ -432,9 +583,9 @@ class FilterDemoViewController: UIViewController {
             alphabet3Radio.tag = UNSELECTED
             
             if (Constants.isAccessibilityApplied) {
-                alphabet1Label.accessibilityTraits = .selected
-                alphabet2Label.accessibilityTraits = .notEnabled
-                alphabet3Label.accessibilityTraits = .notEnabled
+                alphabet1Label.accessibilityTraits.insert(.selected)
+                alphabet2Label.accessibilityTraits.remove(.selected)
+                alphabet3Label.accessibilityTraits.remove(.selected)
             }
         }
         
@@ -454,10 +605,10 @@ class FilterDemoViewController: UIViewController {
             alphabet3Radio.tag = UNSELECTED
             
             if (Constants.isAccessibilityApplied) {
-                alphabet2Label.accessibilityTraits = .selected
+                alphabet2Label.accessibilityTraits.insert(.selected)
                 
-                alphabet1Label.accessibilityTraits = .notEnabled
-                alphabet3Label.accessibilityTraits = .notEnabled
+                alphabet1Label.accessibilityTraits.remove(.selected)
+                alphabet3Label.accessibilityTraits.remove(.selected)
             }
             
         }
@@ -480,9 +631,9 @@ class FilterDemoViewController: UIViewController {
             alphabet2Radio.tag = UNSELECTED
             
             if (Constants.isAccessibilityApplied) {
-                alphabet3Label.accessibilityTraits = .selected
-                alphabet1Label.accessibilityTraits = .notEnabled
-                alphabet2Label.accessibilityTraits = .notEnabled
+                alphabet3Label.accessibilityTraits.insert(.selected)
+                alphabet1Label.accessibilityTraits.remove(.selected)
+                alphabet2Label.accessibilityTraits.remove(.selected)
             }
             
         }

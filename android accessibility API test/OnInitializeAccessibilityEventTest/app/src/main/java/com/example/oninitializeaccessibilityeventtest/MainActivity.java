@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private void initButton() {
         Button button = findViewById(R.id.button);
 
-        //접근성 관련 초기값을 지정 
+        //접근성 관련 초기값을 지정
         AccessibilityEvent event = new AccessibilityEvent();
         event.setChecked(false);
         button.onInitializeAccessibilityEvent(event);

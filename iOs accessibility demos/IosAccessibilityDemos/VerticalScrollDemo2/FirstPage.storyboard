@@ -17,20 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="텍스트 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isS-Hb-kif">
-                                <rect key="frame" x="179" y="442.5" width="56" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="quF-m2-Ee6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0j7-tR-EHW"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="isS-Hb-kif" firstAttribute="centerY" secondItem="0j7-tR-EHW" secondAttribute="centerY" id="IDl-mn-e36"/>
-                            <constraint firstItem="isS-Hb-kif" firstAttribute="centerX" secondItem="0j7-tR-EHW" secondAttribute="centerX" id="vc6-aL-Wpd"/>
+                            <constraint firstItem="quF-m2-Ee6" firstAttribute="trailing" secondItem="0j7-tR-EHW" secondAttribute="trailing" id="1nY-33-ycJ"/>
+                            <constraint firstItem="quF-m2-Ee6" firstAttribute="leading" secondItem="0j7-tR-EHW" secondAttribute="leading" id="2KG-K2-pRG"/>
+                            <constraint firstItem="quF-m2-Ee6" firstAttribute="bottom" secondItem="0j7-tR-EHW" secondAttribute="bottom" id="LcV-w8-8Cz"/>
+                            <constraint firstItem="quF-m2-Ee6" firstAttribute="top" secondItem="0j7-tR-EHW" secondAttribute="top" id="Qk6-K0-EZa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="quF-m2-Ee6" id="tf2-jt-EmY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdU-Mk-o8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,6 +41,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

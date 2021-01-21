@@ -9,54 +9,68 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Accessibility Focus Demo View Controller-->
-        <scene sceneID="F3O-hP-5Rr">
+        <!--Accessibility Focus Demo WithoutA View Controller-->
+        <scene sceneID="7VX-QN-pXQ">
             <objects>
-                <viewController storyboardIdentifier="accessibilityFocusDemo" id="ye8-po-Csa" customClass="AccessibilityFocusDemoViewController" customModule="IosAccessibilityDemos" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cOV-85-hsS">
+                <viewController storyboardIdentifier="accessibilityFocusDemo" id="gtJ-cj-3AY" customClass="AccessibilityFocusDemoWithoutAViewController" customModule="IosAccessibilityDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H9Z-4X-exV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSG-rP-31y">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAq-cm-eIG" userLabel="Fruits Table Container">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NII-eF-maB">
-                                        <rect key="frame" x="123" y="100" width="168" height="30"/>
-                                        <state key="normal" title="접근성이 적용되지 않은 경우"/>
-                                        <connections>
-                                            <action selector="launchAccessibilityFocusDemoWithoutAccessibility:" destination="ye8-po-Csa" eventType="touchDown" id="9uK-Dl-8tq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vse-fe-E3j">
-                                        <rect key="frame" x="144.5" y="330" width="125" height="30"/>
-                                        <state key="normal" title="접근성이 적용된 경우"/>
-                                        <connections>
-                                            <action selector="launchAccessibilityFocusDemoWithAccessibility:" destination="ye8-po-Csa" eventType="touchDown" id="Qzg-Dh-IAb"/>
-                                        </connections>
-                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-Mz-YSE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="vse-fe-E3j" firstAttribute="top" secondItem="NII-eF-maB" secondAttribute="bottom" constant="200" id="BI3-QO-UhO"/>
-                                    <constraint firstItem="vse-fe-E3j" firstAttribute="centerX" secondItem="wSG-rP-31y" secondAttribute="centerX" id="UIX-8t-fca"/>
-                                    <constraint firstItem="NII-eF-maB" firstAttribute="centerX" secondItem="wSG-rP-31y" secondAttribute="centerX" id="oFu-II-kiX"/>
-                                    <constraint firstItem="NII-eF-maB" firstAttribute="top" secondItem="wSG-rP-31y" secondAttribute="top" constant="100" id="wbZ-PT-GqW"/>
+                                    <constraint firstAttribute="height" constant="300" id="2dC-rU-TvJ"/>
+                                    <constraint firstItem="AgC-Mz-YSE" firstAttribute="leading" secondItem="DAq-cm-eIG" secondAttribute="leading" id="3C2-8k-tJi"/>
+                                    <constraint firstItem="AgC-Mz-YSE" firstAttribute="height" secondItem="DAq-cm-eIG" secondAttribute="height" id="C05-XH-eOf"/>
+                                    <constraint firstItem="AgC-Mz-YSE" firstAttribute="top" secondItem="DAq-cm-eIG" secondAttribute="top" id="Kw9-00-bBT"/>
+                                    <constraint firstItem="AgC-Mz-YSE" firstAttribute="width" secondItem="DAq-cm-eIG" secondAttribute="width" id="xKG-ME-p8P"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1P-mW-GkV" userLabel="Vegitables Table Container">
+                                <rect key="frame" x="0.0" y="394" width="414" height="300"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hwl-0N-JmB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Hwl-0N-JmB" firstAttribute="leading" secondItem="J1P-mW-GkV" secondAttribute="leading" id="5lJ-Mb-cPP"/>
+                                    <constraint firstItem="Hwl-0N-JmB" firstAttribute="top" secondItem="J1P-mW-GkV" secondAttribute="top" id="DuT-Ok-hcF"/>
+                                    <constraint firstItem="Hwl-0N-JmB" firstAttribute="width" secondItem="J1P-mW-GkV" secondAttribute="width" id="ZAs-8a-3tn"/>
+                                    <constraint firstAttribute="height" constant="300" id="fAJ-ZD-azc"/>
+                                    <constraint firstItem="Hwl-0N-JmB" firstAttribute="height" secondItem="J1P-mW-GkV" secondAttribute="height" id="wgp-l3-zvS"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ibF-5D-Rvs"/>
+                        <viewLayoutGuide key="safeArea" id="9hH-MX-d88"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wSG-rP-31y" firstAttribute="leading" secondItem="ibF-5D-Rvs" secondAttribute="leading" id="Ydf-LY-85q"/>
-                            <constraint firstItem="wSG-rP-31y" firstAttribute="trailing" secondItem="ibF-5D-Rvs" secondAttribute="trailing" id="mms-fF-kdi"/>
-                            <constraint firstItem="wSG-rP-31y" firstAttribute="top" secondItem="cOV-85-hsS" secondAttribute="top" id="ybx-61-4e8"/>
-                            <constraint firstItem="ibF-5D-Rvs" firstAttribute="bottom" secondItem="wSG-rP-31y" secondAttribute="bottom" id="z7W-Ib-XE7"/>
+                            <constraint firstItem="J1P-mW-GkV" firstAttribute="trailing" secondItem="9hH-MX-d88" secondAttribute="trailing" id="3vR-jQ-UJm"/>
+                            <constraint firstItem="J1P-mW-GkV" firstAttribute="leading" secondItem="9hH-MX-d88" secondAttribute="leading" id="Hk8-kC-uFL"/>
+                            <constraint firstItem="DAq-cm-eIG" firstAttribute="leading" secondItem="9hH-MX-d88" secondAttribute="leading" id="OzP-Cc-6tt"/>
+                            <constraint firstItem="J1P-mW-GkV" firstAttribute="top" secondItem="DAq-cm-eIG" secondAttribute="bottom" constant="50" id="TwS-aZ-Lf7"/>
+                            <constraint firstItem="DAq-cm-eIG" firstAttribute="top" secondItem="9hH-MX-d88" secondAttribute="top" id="nn1-s6-u5U"/>
+                            <constraint firstItem="DAq-cm-eIG" firstAttribute="trailing" secondItem="9hH-MX-d88" secondAttribute="trailing" id="srw-bm-Xsg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fruitTable" destination="AgC-Mz-YSE" id="mui-RU-QQT"/>
+                        <outlet property="vegetableTable" destination="Hwl-0N-JmB" id="hNO-IY-or9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzu-lB-tYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krB-Yb-J1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67" y="54"/>
+            <point key="canvasLocation" x="-129" y="42"/>
         </scene>
     </scenes>
     <resources>

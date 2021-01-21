@@ -14,7 +14,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var demoTitles:[String] =
-        ["가로 스크롤 접근성 데모", "웹뷰", "접근성 포커스 데모", "가로스크롤 접근성 데모 2", "필터 데모"]
+        ["가로 스크롤 접근성 데모", "웹뷰 데모", "접근성 포커스 데모", "가로스크롤 접근성 데모 2", "필터 데모"]
     @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
@@ -50,9 +50,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if (indexPath.row == 0) {
              showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo", viewControllerStoryboardId: "verticalScrollDemo")
         } else if (indexPath.row == 1) {
-            showScreenOnOtherStoryboard(storyboardName: "WebViewDemo", viewControllerStoryboardId: "webViewDemo")
+            showScreenOnOtherStoryboard(storyboardName: "WebViewDemoMain", viewControllerStoryboardId: "webViewDemoMain")
         } else if (indexPath.row == 2) {
-            showScreenOnOtherStoryboard(storyboardName: "AccessibilityFocusDemo", viewControllerStoryboardId: "accessibilityFocusDemo")
+            showScreenOnOtherStoryboard(storyboardName: "AccessibilityFocusDemoMain", viewControllerStoryboardId: "accessibilityFocusDemoMain")
         } else if (indexPath.row == 3) {
             showScreenOnOtherStoryboard(storyboardName: "VerticalScrollDemo2Main", viewControllerStoryboardId: "verticalScrollDemo2Main")
         } else if (indexPath.row == 4) {
@@ -64,7 +64,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: viewControllerStoryboardId)
         viewController.modalPresentationStyle = .fullScreen
-        self.present(viewController, animated: true, completion: nil)
+        //self.present(viewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

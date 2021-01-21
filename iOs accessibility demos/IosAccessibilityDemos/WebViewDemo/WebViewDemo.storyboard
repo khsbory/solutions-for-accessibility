@@ -10,74 +10,82 @@
     </dependencies>
     <scenes>
         <!--Web View Demo View Controller-->
-        <scene sceneID="qKh-Mb-ap2">
+        <scene sceneID="dM1-B8-hoO">
             <objects>
-                <viewController storyboardIdentifier="webViewDemo" id="9jh-Wc-OeH" customClass="WebViewDemoViewController" customModule="IosAccessibilityDemos" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ijd-FW-wPU">
+                <viewController storyboardIdentifier="webViewDemo" id="vqB-qe-ENB" customClass="WebViewDemoViewController" customModule="IosAccessibilityDemos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4eP-qx-5w4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-9j-66p">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqq-RL-BVV">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtc-Bg-MjP">
-                                        <rect key="frame" x="123" y="100" width="168" height="30"/>
-                                        <state key="normal" title="접근성이 적용되지 않은 경우"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jYb-ij-gJ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="4"/>
+                                    </progressView>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfv-qC-r4u">
+                                        <rect key="frame" x="0.0" y="4" width="414" height="734"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztW-fL-eGt">
+                                        <rect key="frame" x="30" y="763" width="30" height="30"/>
+                                        <state key="normal" title="이전"/>
                                         <connections>
-                                            <action selector="launchWebViewDemoWithoutAccessibility:" destination="9jh-Wc-OeH" eventType="touchUpInside" id="Pqu-Zy-jWn"/>
+                                            <action selector="onPreviousButtonClicked:" destination="vqB-qe-ENB" eventType="touchUpInside" id="aDH-Ia-nZm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-yn-byB">
-                                        <rect key="frame" x="144.5" y="330" width="125" height="30"/>
-                                        <state key="normal" title="접근성이 적용된 경우"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11X-eY-bu2">
+                                        <rect key="frame" x="354" y="763" width="30" height="30"/>
+                                        <state key="normal" title="다음"/>
                                         <connections>
-                                            <action selector="launchWebViewDemoWithAccessibility:" destination="9jh-Wc-OeH" eventType="touchUpInside" id="5nm-5b-zTm"/>
+                                            <action selector="onNextButtonClicked:" destination="vqB-qe-ENB" eventType="touchUpInside" id="APz-xc-rdp"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="앱뷰 내부에 웹뷰를 만드는 경우에는 페이지 로딩 시에 스크린 리더 사용자가 페이지가 변경되었음을 알 수 있어야 합니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gV8-3F-fRl">
-                                        <rect key="frame" x="20" y="380" width="374" height="100"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="5hu-Ai-eX6"/>
-                                        </constraints>
-                                        <color key="textColor" systemColor="systemGreenColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="gV8-3F-fRl" firstAttribute="top" secondItem="TlH-yn-byB" secondAttribute="bottom" constant="20" id="0ow-vF-4AY"/>
-                                    <constraint firstItem="rtc-Bg-MjP" firstAttribute="top" secondItem="7SJ-9j-66p" secondAttribute="top" constant="100" id="Ce4-3R-s9x"/>
-                                    <constraint firstItem="TlH-yn-byB" firstAttribute="centerX" secondItem="7SJ-9j-66p" secondAttribute="centerX" id="Qir-0V-pGt"/>
-                                    <constraint firstItem="gV8-3F-fRl" firstAttribute="trailing" secondItem="7SJ-9j-66p" secondAttribute="trailing" constant="-20" id="W5y-gm-GpM"/>
-                                    <constraint firstItem="rtc-Bg-MjP" firstAttribute="centerX" secondItem="7SJ-9j-66p" secondAttribute="centerX" id="cTV-Wi-pt8"/>
-                                    <constraint firstItem="TlH-yn-byB" firstAttribute="top" secondItem="rtc-Bg-MjP" secondAttribute="bottom" constant="200" id="kkU-tr-cPD"/>
-                                    <constraint firstItem="gV8-3F-fRl" firstAttribute="leading" secondItem="7SJ-9j-66p" secondAttribute="leading" constant="20" id="zuF-oL-kWK"/>
+                                    <constraint firstItem="qfv-qC-r4u" firstAttribute="bottom" secondItem="ztW-fL-eGt" secondAttribute="top" constant="-25" id="7HB-jA-1eg"/>
+                                    <constraint firstItem="ztW-fL-eGt" firstAttribute="bottom" secondItem="Vqq-RL-BVV" secondAttribute="bottom" constant="-25" id="CNV-Cc-og7"/>
+                                    <constraint firstItem="11X-eY-bu2" firstAttribute="bottom" secondItem="Vqq-RL-BVV" secondAttribute="bottom" constant="-25" id="HiE-5f-UPS"/>
+                                    <constraint firstItem="jYb-ij-gJ3" firstAttribute="trailing" secondItem="Vqq-RL-BVV" secondAttribute="trailing" id="RkX-Tx-Dao"/>
+                                    <constraint firstItem="qfv-qC-r4u" firstAttribute="top" secondItem="jYb-ij-gJ3" secondAttribute="bottom" id="YgC-QH-LDe"/>
+                                    <constraint firstItem="qfv-qC-r4u" firstAttribute="trailing" secondItem="Vqq-RL-BVV" secondAttribute="trailing" id="cGu-B7-tmh"/>
+                                    <constraint firstItem="qfv-qC-r4u" firstAttribute="leading" secondItem="Vqq-RL-BVV" secondAttribute="leading" id="j8O-yO-pKl"/>
+                                    <constraint firstItem="11X-eY-bu2" firstAttribute="trailing" secondItem="Vqq-RL-BVV" secondAttribute="trailing" constant="-30" id="nbd-a4-Yvm"/>
+                                    <constraint firstItem="jYb-ij-gJ3" firstAttribute="leading" secondItem="Vqq-RL-BVV" secondAttribute="leading" id="qiV-qu-Yr1"/>
+                                    <constraint firstItem="ztW-fL-eGt" firstAttribute="leading" secondItem="Vqq-RL-BVV" secondAttribute="leading" constant="30" id="uVb-id-PIk"/>
+                                    <constraint firstItem="jYb-ij-gJ3" firstAttribute="top" secondItem="Vqq-RL-BVV" secondAttribute="top" id="zhp-Kv-n8R"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="YPG-FV-hut"/>
+                        <viewLayoutGuide key="safeArea" id="BA7-Ug-IZZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7SJ-9j-66p" firstAttribute="leading" secondItem="YPG-FV-hut" secondAttribute="leading" id="LX8-im-E3U"/>
-                            <constraint firstItem="7SJ-9j-66p" firstAttribute="bottom" secondItem="YPG-FV-hut" secondAttribute="bottom" id="TJW-gW-Dth"/>
-                            <constraint firstItem="7SJ-9j-66p" firstAttribute="trailing" secondItem="YPG-FV-hut" secondAttribute="trailing" id="ayg-Mb-FRO"/>
-                            <constraint firstItem="7SJ-9j-66p" firstAttribute="top" secondItem="YPG-FV-hut" secondAttribute="top" id="xxX-2Q-gF6"/>
+                            <constraint firstItem="Vqq-RL-BVV" firstAttribute="leading" secondItem="BA7-Ug-IZZ" secondAttribute="leading" id="Hxl-zj-2Q1"/>
+                            <constraint firstItem="Vqq-RL-BVV" firstAttribute="top" secondItem="BA7-Ug-IZZ" secondAttribute="top" id="hxB-bM-AVO"/>
+                            <constraint firstItem="Vqq-RL-BVV" firstAttribute="trailing" secondItem="BA7-Ug-IZZ" secondAttribute="trailing" id="qKx-CK-rJv"/>
+                            <constraint firstItem="BA7-Ug-IZZ" firstAttribute="bottom" secondItem="Vqq-RL-BVV" secondAttribute="bottom" id="yZ7-dn-KNG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="11X-eY-bu2" id="kBH-Sf-MuR"/>
+                        <outlet property="previousButton" destination="ztW-fL-eGt" id="uP1-Ot-y0h"/>
+                        <outlet property="progressView" destination="jYb-ij-gJ3" id="lcf-38-qW9"/>
+                        <outlet property="webView" destination="qfv-qC-r4u" id="VPv-rL-Mal"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IyT-HW-qUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTr-dy-T52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="65.625"/>
+            <point key="canvasLocation" x="-76" y="92"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

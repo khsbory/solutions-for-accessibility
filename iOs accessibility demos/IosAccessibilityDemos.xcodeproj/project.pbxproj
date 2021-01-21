@@ -24,33 +24,23 @@
 		B326738725B5342C0067C5CE /* VerticalScrollDemo2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B326738625B5342C0067C5CE /* VerticalScrollDemo2.storyboard */; };
 		B326738C25B534390067C5CE /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B326738B25B534390067C5CE /* FirstPage.storyboard */; };
 		B326739125B5344A0067C5CE /* SecondPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B326739025B5344A0067C5CE /* SecondPage.storyboard */; };
-		B32673AE25B5692F0067C5CE /* FirstPageWAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673AD25B5692F0067C5CE /* FirstPageWAViewController.swift */; };
-		B32673B325B5694A0067C5CE /* SecondPageWAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673B225B5694A0067C5CE /* SecondPageWAViewController.swift */; };
-		B32673B825B569670067C5CE /* VerticalScrollDemo2WAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673B725B569670067C5CE /* VerticalScrollDemo2WAViewController.swift */; };
 		B32673BD25B569A20067C5CE /* VerticalScrollDemo2MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673BC25B569A20067C5CE /* VerticalScrollDemo2MainViewController.swift */; };
 		B32673C225B569D20067C5CE /* VerticalScrollDemo2Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673C125B569D20067C5CE /* VerticalScrollDemo2Main.storyboard */; };
-		B32673C725B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673C625B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard */; };
-		B32673CC25B56B930067C5CE /* FirstPageWA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673CB25B56B930067C5CE /* FirstPageWA.storyboard */; };
-		B32673D125B56BA00067C5CE /* SecondPageWA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673D025B56BA00067C5CE /* SecondPageWA.storyboard */; };
 		B32673D725B570CD0067C5CE /* FilterDemoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673D625B570CD0067C5CE /* FilterDemoMainViewController.swift */; };
 		B32673DC25B570E70067C5CE /* FilterDemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */; };
 		B32673E125B571B70067C5CE /* FilterDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32673E025B571B70067C5CE /* FilterDemoViewController.swift */; };
 		B32673E625B571C70067C5CE /* FilterDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32673E525B571C70067C5CE /* FilterDemo.storyboard */; };
-		B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */; };
-		B33219132579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */; };
-		B33219182579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */; };
-		B332191D2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */; };
-		B33219222579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */; };
+		B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoMainViewController.swift */; };
+		B33219132579E6A500B6B6C6 /* AccessibilityFocusDemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33219122579E6A500B6B6C6 /* AccessibilityFocusDemoMain.storyboard */; };
+		B33219182579E76600B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33219172579E76600B6B6C6 /* AccessibilityFocusDemoViewController.swift */; };
 		B33255EB25B672DA00F6C8DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33255EA25B672DA00F6C8DD /* Constants.swift */; };
-		B33C9A27257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */; };
+		B33C9A27257DF418009E8811 /* AccessibilityFocusDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33C9A26257DF418009E8811 /* AccessibilityFocusDemo.storyboard */; };
 		B3403810258076570087BE07 /* FruitTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340380F258076570087BE07 /* FruitTableCell.swift */; };
 		B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3403814258076A90087BE07 /* VegetableTableCell.swift */; };
-		B34FF6D3256612C00026AF2E /* WebViewWithoutA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34FF6D2256612C00026AF2E /* WebViewWithoutA.storyboard */; };
-		B34FF6DB256614F50026AF2E /* WebViewWithA.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34FF6DA256614F50026AF2E /* WebViewWithA.storyboard */; };
-		B35BF8772563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BF8762563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift */; };
-		B37E840425650D4900DCD7DF /* WebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E840325650D4900DCD7DF /* WebViewDemoViewController.swift */; };
-		B37E840925650D6000DCD7DF /* WebViewDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E840825650D6000DCD7DF /* WebViewDemo.storyboard */; };
-		B37E84172565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E84162565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift */; };
+		B34FF6DB256614F50026AF2E /* WebViewDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B34FF6DA256614F50026AF2E /* WebViewDemo.storyboard */; };
+		B35BF8772563B9CA006858DF /* WebViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35BF8762563B9CA006858DF /* WebViewDemoViewController.swift */; };
+		B37E840425650D4900DCD7DF /* WebViewDemoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E840325650D4900DCD7DF /* WebViewDemoMainViewController.swift */; };
+		B37E840925650D6000DCD7DF /* WebViewDemoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E840825650D6000DCD7DF /* WebViewDemoMain.storyboard */; };
 		C258F8A64172CCBF6ACA81AD /* Pods_IosAccessibilityDemos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E9DDEA1F9B164E40F1C63E /* Pods_IosAccessibilityDemos.framework */; };
 		C50EA2E489948B301CE07F27 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2309218DADF49B74989DDBF6 /* Pods_IosAccessibilityDemos_IosAccessibilityDemosUITests.framework */; };
 		DF62CE1D365F1E675BCC623E /* Pods_IosAccessibilityDemosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE540D3D513BD93A0CFFE616 /* Pods_IosAccessibilityDemosTests.framework */; };
@@ -109,33 +99,23 @@
 		B326738625B5342C0067C5CE /* VerticalScrollDemo2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerticalScrollDemo2.storyboard; sourceTree = "<group>"; };
 		B326738B25B534390067C5CE /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
 		B326739025B5344A0067C5CE /* SecondPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondPage.storyboard; sourceTree = "<group>"; };
-		B32673AD25B5692F0067C5CE /* FirstPageWAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageWAViewController.swift; sourceTree = "<group>"; };
-		B32673B225B5694A0067C5CE /* SecondPageWAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageWAViewController.swift; sourceTree = "<group>"; };
-		B32673B725B569670067C5CE /* VerticalScrollDemo2WAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollDemo2WAViewController.swift; sourceTree = "<group>"; };
 		B32673BC25B569A20067C5CE /* VerticalScrollDemo2MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollDemo2MainViewController.swift; sourceTree = "<group>"; };
 		B32673C125B569D20067C5CE /* VerticalScrollDemo2Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerticalScrollDemo2Main.storyboard; sourceTree = "<group>"; };
-		B32673C625B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerticalScrollDemo2WA.storyboard; sourceTree = "<group>"; };
-		B32673CB25B56B930067C5CE /* FirstPageWA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPageWA.storyboard; sourceTree = "<group>"; };
-		B32673D025B56BA00067C5CE /* SecondPageWA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondPageWA.storyboard; sourceTree = "<group>"; };
 		B32673D625B570CD0067C5CE /* FilterDemoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoMainViewController.swift; sourceTree = "<group>"; };
 		B32673DB25B570E70067C5CE /* FilterDemoMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemoMain.storyboard; sourceTree = "<group>"; };
 		B32673E025B571B70067C5CE /* FilterDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDemoViewController.swift; sourceTree = "<group>"; };
 		B32673E525B571C70067C5CE /* FilterDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterDemo.storyboard; sourceTree = "<group>"; };
-		B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoViewController.swift; sourceTree = "<group>"; };
-		B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemo.storyboard; sourceTree = "<group>"; };
-		B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoWithoutAViewController.swift; sourceTree = "<group>"; };
-		B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoWithAViewController.swift; sourceTree = "<group>"; };
-		B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoWithA.storyboard; sourceTree = "<group>"; };
+		B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoMainViewController.swift; sourceTree = "<group>"; };
+		B33219122579E6A500B6B6C6 /* AccessibilityFocusDemoMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoMain.storyboard; sourceTree = "<group>"; };
+		B33219172579E76600B6B6C6 /* AccessibilityFocusDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFocusDemoViewController.swift; sourceTree = "<group>"; };
 		B33255EA25B672DA00F6C8DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemoWithoutA.storyboard; sourceTree = "<group>"; };
+		B33C9A26257DF418009E8811 /* AccessibilityFocusDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccessibilityFocusDemo.storyboard; sourceTree = "<group>"; };
 		B340380F258076570087BE07 /* FruitTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTableCell.swift; sourceTree = "<group>"; };
 		B3403814258076A90087BE07 /* VegetableTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableTableCell.swift; sourceTree = "<group>"; };
-		B34FF6D2256612C00026AF2E /* WebViewWithoutA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewWithoutA.storyboard; sourceTree = "<group>"; };
-		B34FF6DA256614F50026AF2E /* WebViewWithA.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewWithA.storyboard; sourceTree = "<group>"; };
-		B35BF8762563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoWithAccessibilityViewController.swift; sourceTree = "<group>"; };
-		B37E840325650D4900DCD7DF /* WebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoViewController.swift; sourceTree = "<group>"; };
-		B37E840825650D6000DCD7DF /* WebViewDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewDemo.storyboard; sourceTree = "<group>"; };
-		B37E84162565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoWithoutAccessibilityViewController.swift; sourceTree = "<group>"; };
+		B34FF6DA256614F50026AF2E /* WebViewDemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewDemo.storyboard; sourceTree = "<group>"; };
+		B35BF8762563B9CA006858DF /* WebViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoViewController.swift; sourceTree = "<group>"; };
+		B37E840325650D4900DCD7DF /* WebViewDemoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemoMainViewController.swift; sourceTree = "<group>"; };
+		B37E840825650D6000DCD7DF /* WebViewDemoMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewDemoMain.storyboard; sourceTree = "<group>"; };
 		BE540D3D513BD93A0CFFE616 /* Pods_IosAccessibilityDemosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosAccessibilityDemosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1130A307714CB107C33C91 /* Pods-IosAccessibilityDemosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAccessibilityDemosTests.debug.xcconfig"; path = "Target Support Files/Pods-IosAccessibilityDemosTests/Pods-IosAccessibilityDemosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,6 +190,8 @@
 				1F85021C25188B4C00B99181 /* VerticalScrollDemo */,
 				1F8501EA2518816700B99181 /* AppDelegate.swift */,
 				1F8501EC2518816700B99181 /* SceneDelegate.swift */,
+				B3403814258076A90087BE07 /* VegetableTableCell.swift */,
+				B340380F258076570087BE07 /* FruitTableCell.swift */,
 				1F8501EE2518816700B99181 /* ViewController.swift */,
 				1F8501F02518816700B99181 /* Main.storyboard */,
 				1F8501F32518816800B99181 /* Assets.xcassets */,
@@ -270,14 +252,8 @@
 				B326738625B5342C0067C5CE /* VerticalScrollDemo2.storyboard */,
 				B326738B25B534390067C5CE /* FirstPage.storyboard */,
 				B326739025B5344A0067C5CE /* SecondPage.storyboard */,
-				B32673AD25B5692F0067C5CE /* FirstPageWAViewController.swift */,
-				B32673B225B5694A0067C5CE /* SecondPageWAViewController.swift */,
-				B32673B725B569670067C5CE /* VerticalScrollDemo2WAViewController.swift */,
 				B32673BC25B569A20067C5CE /* VerticalScrollDemo2MainViewController.swift */,
 				B32673C125B569D20067C5CE /* VerticalScrollDemo2Main.storyboard */,
-				B32673C625B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard */,
-				B32673CB25B56B930067C5CE /* FirstPageWA.storyboard */,
-				B32673D025B56BA00067C5CE /* SecondPageWA.storyboard */,
 			);
 			path = VerticalScrollDemo2;
 			sourceTree = "<group>";
@@ -296,14 +272,10 @@
 		B33219092579E5AE00B6B6C6 /* AccessibilityFocusDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift */,
-				B33219122579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard */,
-				B33219172579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift */,
-				B332191C2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift */,
-				B33219212579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard */,
-				B33C9A26257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard */,
-				B340380F258076570087BE07 /* FruitTableCell.swift */,
-				B3403814258076A90087BE07 /* VegetableTableCell.swift */,
+				B332190A2579E60900B6B6C6 /* AccessibilityFocusDemoMainViewController.swift */,
+				B33219122579E6A500B6B6C6 /* AccessibilityFocusDemoMain.storyboard */,
+				B33219172579E76600B6B6C6 /* AccessibilityFocusDemoViewController.swift */,
+				B33C9A26257DF418009E8811 /* AccessibilityFocusDemo.storyboard */,
 			);
 			path = AccessibilityFocusDemo;
 			sourceTree = "<group>";
@@ -311,12 +283,10 @@
 		B35BF8752563B993006858DF /* WebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B35BF8762563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift */,
-				B37E84162565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift */,
-				B37E840325650D4900DCD7DF /* WebViewDemoViewController.swift */,
-				B37E840825650D6000DCD7DF /* WebViewDemo.storyboard */,
-				B34FF6D2256612C00026AF2E /* WebViewWithoutA.storyboard */,
-				B34FF6DA256614F50026AF2E /* WebViewWithA.storyboard */,
+				B35BF8762563B9CA006858DF /* WebViewDemoViewController.swift */,
+				B37E840325650D4900DCD7DF /* WebViewDemoMainViewController.swift */,
+				B37E840825650D6000DCD7DF /* WebViewDemoMain.storyboard */,
+				B34FF6DA256614F50026AF2E /* WebViewDemo.storyboard */,
 			);
 			path = WebViewDemo;
 			sourceTree = "<group>";
@@ -433,23 +403,18 @@
 			files = (
 				1F8501F72518816800B99181 /* LaunchScreen.storyboard in Resources */,
 				B32673C225B569D20067C5CE /* VerticalScrollDemo2Main.storyboard in Resources */,
-				B32673C725B56AE20067C5CE /* VerticalScrollDemo2WA.storyboard in Resources */,
 				1F8501F42518816800B99181 /* Assets.xcassets in Resources */,
 				1F8502212518A37B00B99181 /* VerticalScrollDemo.storyboard in Resources */,
-				B34FF6DB256614F50026AF2E /* WebViewWithA.storyboard in Resources */,
+				B34FF6DB256614F50026AF2E /* WebViewDemo.storyboard in Resources */,
 				B326738C25B534390067C5CE /* FirstPage.storyboard in Resources */,
-				B33C9A27257DF418009E8811 /* AccessibilityFocusDemoWithoutA.storyboard in Resources */,
+				B33C9A27257DF418009E8811 /* AccessibilityFocusDemo.storyboard in Resources */,
 				B32673DC25B570E70067C5CE /* FilterDemoMain.storyboard in Resources */,
 				B326738725B5342C0067C5CE /* VerticalScrollDemo2.storyboard in Resources */,
 				B326739125B5344A0067C5CE /* SecondPage.storyboard in Resources */,
-				B32673CC25B56B930067C5CE /* FirstPageWA.storyboard in Resources */,
 				1F8501F22518816700B99181 /* Main.storyboard in Resources */,
-				B33219222579E79D00B6B6C6 /* AccessibilityFocusDemoWithA.storyboard in Resources */,
-				B32673D125B56BA00067C5CE /* SecondPageWA.storyboard in Resources */,
-				B34FF6D3256612C00026AF2E /* WebViewWithoutA.storyboard in Resources */,
-				B37E840925650D6000DCD7DF /* WebViewDemo.storyboard in Resources */,
+				B37E840925650D6000DCD7DF /* WebViewDemoMain.storyboard in Resources */,
 				B32673E625B571C70067C5CE /* FilterDemo.storyboard in Resources */,
-				B33219132579E6A500B6B6C6 /* AccessibilityFocusDemo.storyboard in Resources */,
+				B33219132579E6A500B6B6C6 /* AccessibilityFocusDemoMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,23 +547,18 @@
 				B3403810258076570087BE07 /* FruitTableCell.swift in Sources */,
 				1F8501EB2518816700B99181 /* AppDelegate.swift in Sources */,
 				1F85021B2518852B00B99181 /* TableCell.swift in Sources */,
-				B332191D2579E78200B6B6C6 /* AccessibilityFocusDemoWithAViewController.swift in Sources */,
-				B32673B325B5694A0067C5CE /* SecondPageWAViewController.swift in Sources */,
 				B32673D725B570CD0067C5CE /* FilterDemoMainViewController.swift in Sources */,
-				B35BF8772563B9CA006858DF /* WebViewDemoWithAccessibilityViewController.swift in Sources */,
+				B35BF8772563B9CA006858DF /* WebViewDemoViewController.swift in Sources */,
 				B32673E125B571B70067C5CE /* FilterDemoViewController.swift in Sources */,
 				1F8501ED2518816700B99181 /* SceneDelegate.swift in Sources */,
 				1F85021E25188B6A00B99181 /* VerticalScrollDemoViewController.swift in Sources */,
 				B326737525B5338B0067C5CE /* VerticalScrollDemo2ViewController.swift in Sources */,
-				B37E840425650D4900DCD7DF /* WebViewDemoViewController.swift in Sources */,
-				B32673B825B569670067C5CE /* VerticalScrollDemo2WAViewController.swift in Sources */,
-				B37E84172565128600DCD7DF /* WebViewDemoWithoutAccessibilityViewController.swift in Sources */,
+				B37E840425650D4900DCD7DF /* WebViewDemoMainViewController.swift in Sources */,
 				B3403815258076A90087BE07 /* VegetableTableCell.swift in Sources */,
 				B326737D25B533D80067C5CE /* FirstPageViewController.swift in Sources */,
-				B32673AE25B5692F0067C5CE /* FirstPageWAViewController.swift in Sources */,
-				B33219182579E76600B6B6C6 /* AccessibilityFocusDemoWithoutAViewController.swift in Sources */,
+				B33219182579E76600B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */,
 				B32673BD25B569A20067C5CE /* VerticalScrollDemo2MainViewController.swift in Sources */,
-				B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoViewController.swift in Sources */,
+				B332190B2579E60900B6B6C6 /* AccessibilityFocusDemoMainViewController.swift in Sources */,
 				B33255EB25B672DA00F6C8DD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
