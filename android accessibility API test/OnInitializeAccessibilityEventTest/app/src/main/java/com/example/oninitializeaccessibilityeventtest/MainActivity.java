@@ -2,7 +2,10 @@ package com.example.oninitializeaccessibilityeventtest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Button;
 
@@ -17,12 +20,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initButton() {
-        Button button = findViewById(R.id.button);
 
-        //접근성 관련 초기값을 지정
-        AccessibilityEvent event = new AccessibilityEvent();
-        event.setChecked(false);
-        button.onInitializeAccessibilityEvent(event);
+
+        if (Build.VERSION.SDK_INT >= 14) {
+            // If the API version is equal of higher than the version in
+            // which onInitializeAccessibilityNodeInfo was introduced we
+            // register a delegate with a customized implementation.
+            Button button = findViewById(R.id.button);
+
+            button.setAccessibilityDelegate(new View.AccessibilityDelegate() {
+                public void onInitializeAccessibilityEvent(View host,
+                                                              AccessibilityEvent event1) {
+
+                    Log.d("plusapps", "onInitializeAccessibilityEvent");
+                    // Let the default implementation populate the info.
+                    super.onInitializeAccessibilityEvent(host, event1);
+                    // Set some other information.
+                    event1.setChecked(false);
+                }
+            });
+        }
+
+
 
     }
 }
