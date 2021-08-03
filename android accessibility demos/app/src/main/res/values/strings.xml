@@ -79,7 +79,7 @@
     <string name="stay_focus_good">접근성이 적용된 경우</string>
     <string name="stay_focus_bad">접근성이 적용되지 않은 경우</string>
     <string name="progressBar">막대 그래프로만 진행률을 표시하는 경우</string>
-    <string name="progressBarText">ProgressBar 클래스를 사용하여 진행률 상태를 그래프로 표시하는 경우에는 스크린 리더 사용자를 위해 대체 텍스트를 삽입하여 진행률 바에 접근할 수 있도록 해 주어야 합니다.</string>
+    <string name="progressBarText">ProgressBar 클래스를 사용하여 진행률 상태를 그래프로 표시하는 경우에는 스크린 리더 사용자를 위해 대체 텍스트를 삽입하여 진행률 바에 접근할 수 있도록 해 주어야 합니다. (안드로이드 11 이상에서는 해당 작업 필요 없음).</string>
     <string name="progressBarAccessibleExample">진행률막대, 접근성이 적용된 예시</string>
     <string name="progressBarNoneAccessibleExample">진행률 막대, 접근성이 적용되지 않은 예시</string>
     <string name="startProgress">진행률 표시줄 테스트 시작하기</string>
@@ -225,20 +225,51 @@
     <string name="closeBanner">배너 닫기</string>
     <string name="layerFocusExplain"> 레이어를 표시할 때 기존 콘텐츠를 흐리게 표시하는 경우가 있습니다. 이때 접근성 구현을 하지 않으면 스크린 리더 사용자는 레이어와 뒷배경 콘텐츠를 구분할 수 없어 콘텐츠를 탐색하는데 많은 어려움이 있습니다.</string>
     <string name="bannerRolling">볼륨키로 배너 넘기기</string>
-<string name="contentGrouping">포커스 합치기</string>
-<string name="contentGroupingDetail">이름 홍길동, 나이 25세 와 같은 화면에서 각각의 제목과 텍스트의 접근성 초점이 분리되어 있다면 하나의 초점으로 합치는 것이 스크린 리더 사용자의 탐색의 효율성을 높일 수 있습니다.</string>
-    <string name="song_details">Song Details</string>
-    <string name="label_song_name">Name</string>
-    <string name="value_song_name">Hey Jude</string>
-    <string name="label_song_artists">Artists</string>
-    <string name="value_song_artists">The Beatles</string>
-    <string name="label_song_cost">Cost</string>
-    <string name="value_song_cost">$1.45</string>
+    <string name="contentGrouping">포커스 합치기</string>
+    <string name="contentGroupingDetail">이름 홍길동, 나이 25세 와 같은 화면에서 각각의 제목과 텍스트의 접근성 초점이 분리되어 있다면 하나의 초점으로 합치는 것이 스크린 리더 사용자의 탐색의 효율성을 높일 수 있습니다.</string>
+    <string name="song_details">곡 정보</string>
+    <string name="label_song_name">곡명</string>
+    <string name="value_song_name">학교종이땡땡땡</string>
+    <string name="label_song_artists">아티스트</string>
+    <string name="value_song_artists">동요클럽</string>
+    <string name="label_song_cost">정가</string>
+    <string name="value_song_cost">700원</string>
 
     <string name="dragAndDropName">드래그앤드롭</string>
     <string name="drag_descript">특정 리스트의 순서를 드래그 앤 드롭 형식으로 이동시키는 경우 톡백 사용자도 해당 기능을 이용할 수 있도록 접근성 대응을 해 주어야 합니다.</string>
     <string name="drag_good">드래그앤드롭, 접근성 적용한 경우</string>
     <string name="drag_bad">드래그앤드롭, 접근성 적용하지 않은 경우</string>
-    <string name="moveWithVolume">볼륨키로 순서 이동</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noScrollingRollingBanner">스크롤이 없는 롤링배너를 구현하는 경우는 접근성 초점이 해당 배너에 머무르는 동안 배너가 롤링되지 않도록 하는 것도 하나의 해결 방법이 될 수 있습니다.</string>
+    <string name="noScrollingRollingBannerCover">스크롤 기능이 없는 롤링 배너</string>
 
+    <string name="activity_fullscreen_fragment_layer_title">Fragment 전체 화면 레이어</string>
+    <string name="fullscreen_fragment_layer_description">앱에서 Activity를 사용하지 않고, Fragment로 전체 화면을 만들고, 원래 Activity를 덮을 때도 있습니다. 그럴 때는 사용자가 뒤로가기 제스처나 내비게이션 버튼을 눌렀을 때, 레이어를 열기 전 상태로 돌아 갈 수 있고, 화면 밖으로 초점이 나가지 않도록 해 주어야 합니다.</string>
+    <string name="fullscreen_fragment_layer_exampleActivityDescription1">아래 버튼을 눌러 프래그먼트 레이어를 표시해보세요. 하드웨어 키보드의 Tab키, Alt + 화살표 키, 순차 탐색으로 화면을 탐색해 보세요, Talkback의 뒤로가기 제스처(아래쪽 왼쪽 순으로 쓸기)로 레이어를 닫아보세요.</string>
+    <string name="fullscreen_fragment_layer_exampleActivityDescription2">
+        아래는 매우 질이 나쁜 친구입니다. 화면의 변화를 전혀 알 수 없고, 밖으로 탐색도 가능한 문제가 있습니다. 밖에 있는 버튼에 초점이 가기 때문에 이미 열린 레이어 버튼을 또 누를 수 있고, 앱이 꺼지는 불상사를 경험하실 수 있습니다.
+    </string>
+    <string name="fullscreen_fragment_layer_goodFragmentString">이 프래그먼트는 뒤로 내비게이션 버튼으로 빠저나갈 수 있으며, 바깥으로 초점이 나가지 않아요! :)</string>
+    <string name="fullscreen_fragment_layer_closeLayer">이 레이어 닫기</string>
+    <string name="fullscreen_fragment_layer_openGoodFragment">아주 착한 레이어 열기</string>
+    <string name="fullscreen_fragment_layer_openBadFragment">질 나쁜 레이어 열기</string>
+    <string name="accessibilityExample">접근성 예제</string>
+
+    <string name="horizontal_scroll_demo">가로 스크롤 데모</string>
+
+    <string name="video_player">비디오 플레이어</string>
+    <string name="videoExplain">비디오 플레이어를 구현하는 경우에는 스크린 리더 사용 시, 전체화면 구현으로 인한 접근성 대응을 해 주어야 합니다.</string>
+
+    <string name="startFullScreen">전체화면전환</string>
+    <string name="endFullScreen">전체화면 종료</string>
+    <string name="hideControlButton">플레이어 컨트롤 숨기기</string>
+    <string name="previousTrack">이전 트랙</string>
+    <string name="nextTrack">다음 트랙</string>
+    <string name="custom_viewgroup_title">커스텀 뷰그룹</string>
+
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
 </resources>

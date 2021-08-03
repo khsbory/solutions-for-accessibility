@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,14 +12,24 @@ import com.nvisions.solutionsforaccessibility.CollapseExpand.CollapseExpandActiv
 import com.nvisions.solutionsforaccessibility.ContentGrouping.ContentGroupingActivity;
 import com.nvisions.solutionsforaccessibility.CustomControl.CustomControlActivity;
 import com.nvisions.solutionsforaccessibility.DragAndDrop.DragAndDropActivity;
+import com.nvisions.solutionsforaccessibility.FullscreenFragmentLayer.FullscreenFragmentLayerActivity;
+import com.nvisions.solutionsforaccessibility.HorizontalScroll.HorizontalScrollActivity;
+import com.nvisions.solutionsforaccessibility.KeyBoard.KeyBoardActivity;
 import com.nvisions.solutionsforaccessibility.LayerFocus.LayerFocusActivity;
 import com.nvisions.solutionsforaccessibility.LiveRegion.LiveRegionActivity;
 import com.nvisions.solutionsforaccessibility.NestedScroll.NestedScrollActivity;
+import com.nvisions.solutionsforaccessibility.NoScrollingRollingBanner.NoScrollingRollingBannerActivity;
 import com.nvisions.solutionsforaccessibility.RatingBar.RatingBarActivity;
+import com.nvisions.solutionsforaccessibility.ScrollFocus.ScrollFocusActivity;
 import com.nvisions.solutionsforaccessibility.TabControl.TabControlActivity;
+import com.nvisions.solutionsforaccessibility.Test.TestActivity;
+import com.nvisions.solutionsforaccessibility.Video.VideoActivity;
 import com.nvisions.solutionsforaccessibility.VoiceSearch.VoiceSearchActivity;
 import com.nvisions.solutionsforaccessibility.WebView.WebViewActivity;
 
+import com.nvisions.solutionsforaccessibility.customviewgroup.CustomViewGroupActivity;
+import com.nvisions.solutionsforaccessibility.expandableList.ExpandableListSampleActivity;
+import com.nvisions.solutionsforaccessibility.gmarketSample.GmarketSampleActivity;
 import com.nvisions.solutionsforaccessibility.korailTalk.KorailTalkActivity;
 import com.nvisions.solutionsforaccessibility.labelFor.LabelForActivity;
 import com.nvisions.solutionsforaccessibility.music.MusicActivity;
@@ -74,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ProgressBarActivity.class);
-startActivity(intent);
+                startActivity(intent);
             }
         });
 
@@ -123,16 +134,7 @@ startActivity(intent);
             }
         });
 
-        Button tabControl = (Button)findViewById(R.id.tabControl);
-        tabControl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), TabControlActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button collapseExpand = (Button)findViewById(R.id.collapseExpand);
+                Button collapseExpand = (Button)findViewById(R.id.collapseExpand);
         collapseExpand.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -200,6 +202,97 @@ startActivity(intent);
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), DragAndDropActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button keyBoardButton = (Button)findViewById(R.id.keyBoardButton);
+        keyBoardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), KeyBoardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button gmarketButton = findViewById(R.id.gmarketButton);
+        gmarketButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), GmarketSampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button scrollButton = findViewById(R.id.scrollButton);
+        scrollButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ScrollFocusActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button noScrollingRollingBanner = findViewById(R.id.noScrollingRollingBanner);
+        noScrollingRollingBanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NoScrollingRollingBannerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button expandableListActivity = findViewById(R.id.expandableListActivity_bt);
+        expandableListActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ExpandableListSampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnFullscreenFragment = findViewById(R.id.GoExample_fullscreen_fragment_layer);
+        btnFullscreenFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FullscreenFragmentLayerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button testButton = findViewById(R.id.testButton);
+        testButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button horizontalScrollButton = findViewById(R.id.horizontalScrollButton);
+        horizontalScrollButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), HorizontalScrollActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button videoPlayer = findViewById(R.id.videoPlayer);
+        videoPlayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), VideoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button customViewGroup = findViewById(R.id.customViewGroup);
+        customViewGroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CustomViewGroupActivity.class);
                 startActivity(intent);
             }
         });

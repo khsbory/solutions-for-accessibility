@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nvisions.solutionsforaccessibility">
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:background="?android:attr/colorBackground"
@@ -9,14 +13,60 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight"
+        android:theme="@style/globalTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".customviewgroup.CustomViewGroupBadActivity"></activity>
+        <activity android:name=".customviewgroup.CustomViewGroupGoodActivity" />
+        <activity android:name=".customviewgroup.CustomViewGroupActivity" />
+        <activity android:name=".Test.TestActivity" />
         <activity
-            android:theme="@style/NoActionBarTheme"
-            android:name=".DragAndDrop.DragAndDropBadActivity"></activity>
+            android:name=".FullscreenFragmentLayer.FullscreenFragmentLayerExampleActivity"
+            android:parentActivityName=".FullscreenFragmentLayer.FullscreenFragmentLayerActivity" />
         <activity
-            android:theme="@style/NoActionBarTheme"
-            android:name=".DragAndDrop.DragAndDropGoodActivity" />
+            android:name=".FullscreenFragmentLayer.FullscreenFragmentLayerActivity"
+            android:parentActivityName=".MainActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity
+            android:name=".NoScrollingRollingBanner.NoScrollingRollingBannerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NoScrollingRollingBanner.WithAccessibilityActivity"
+            android:parentActivityName=".NoScrollingRollingBanner.NoScrollingRollingBannerActivity" />
+        <activity
+            android:name=".NoScrollingRollingBanner.WithoutAccessibilityActivity"
+            android:parentActivityName=".NoScrollingRollingBanner.NoScrollingRollingBannerActivity" />
+        <activity android:name=".ScrollFocus.ScrollFocusBadActivity" />
+        <activity android:name=".ScrollFocus.ScrollFocusGoodActivity" />
+        <activity android:name=".ScrollFocus.ScrollFocusActivity" />
+        <activity
+            android:name=".expandableList.ExpandableListSampleActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".expandableList.WithAccessibilityActivity"
+            android:parentActivityName=".expandableList.ExpandableListSampleActivity" />
+        <activity
+            android:name=".expandableList.WithoutAccessibilityActivity"
+            android:parentActivityName=".expandableList.ExpandableListSampleActivity" />
+        <activity
+            android:name=".gmarketSample.GmarketSampleActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".gmarketSample.WithoutAccessibilityActivity"
+            android:parentActivityName=".gmarketSample.GmarketSampleActivity" />
+        <activity
+            android:name=".gmarketSample.WithAccessibilityActivity"
+            android:parentActivityName=".gmarketSample.GmarketSampleActivity" />
+        <activity android:name=".KeyBoard.KeyBoardGoodAndBadActivity" />
+        <activity android:name=".KeyBoard.KeyBoardActivity" />
+        <activity
+            android:name=".DragAndDrop.DragAndDropBadActivity"
+            android:theme="@style/globalTheme.NoActionBarTheme" />
+        <activity
+            android:name=".DragAndDrop.DragAndDropGoodActivity"
+            android:theme="@style/globalTheme.NoActionBarTheme" />
         <activity android:name=".DragAndDrop.DragAndDropActivity" />
         <activity android:name=".LayerFocus.LayerFocusBadActivity" />
         <activity android:name=".LayerFocus.LayerFocusGoodActivity" />
@@ -24,6 +74,16 @@
         <activity
             android:name=".refreshContents.RefreshContentsWithoutAccessibilityActivity"
             android:parentActivityName=".refreshContents.RefreshContentsActivity" />
+        <activity
+            android:name=".ContentGrouping.ContentGroupingActivity"
+            android:label="@string/contentGrouping"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContentGrouping.ContentGroupingBadActivity"
+            android:parentActivityName=".ContentGrouping.ContentGroupingActivity" />
+        <activity
+            android:name=".ContentGrouping.ContentGroupingGoodActivity"
+            android:parentActivityName=".ContentGrouping.ContentGroupingActivity" />
         <activity
             android:name=".refreshContents.RefreshContentsWithAccessibilityActivity"
             android:parentActivityName=".refreshContents.RefreshContentsActivity" />
@@ -119,16 +179,6 @@
             android:label="@string/label_for_example2_title"
             android:parentActivityName=".labelFor.LabelForActivity" />
         <activity
-            android:name=".ContentGrouping.ContentGroupingActivity"
-            android:label="@string/contentGrouping"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ContentGrouping.ContentGroupingBadActivity"
-                        android:parentActivityName=".ContentGrouping.ContentGroupingActivity" />
-        <activity
-            android:name=".ContentGrouping.ContentGroupingGoodActivity"
-                        android:parentActivityName=".ContentGrouping.ContentGroupingActivity" />
-        <activity
             android:name=".recyclerview.RecyclerViewFocusActivity"
             android:label="@string/stay_focus_example"
             android:parentActivityName=".recyclerview.StayFocusActivity" />
@@ -175,9 +225,22 @@
         <activity android:name=".CustomControl.CustomControlBadActivity" />
         <activity android:name=".CustomControl.CustomControlGoodActivity" />
         <activity android:name=".CustomControl.CustomControlActivity" />
+        <activity
+            android:name=".HorizontalScroll.HorizontalScrollActivity"
+            android:label="@string/horizontal_scroll_demo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Video.VideoActivity"
+            android:label="@string/video_player"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Video.VideoGoodActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/globalTheme.NoActionBarTheme" />
+        <activity
+            android:name=".Video.VideoBadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/globalTheme.NoActionBarTheme" />
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
